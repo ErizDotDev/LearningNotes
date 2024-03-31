@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "41094c0d8f101a66",
+    "type": "split",
+    "children": [
+      {
+        "id": "2168b4260b2b249d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14b9ba57eeb70910",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2b9fb17942810bd7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c867d08fe47ade1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "546505948e47eaa3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "31d855386c18efba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1ee1117b40aad5f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f50888121e04203a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6fea993eb0aec89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2659cd37182e9a40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4e0b36c2c7eeeb3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "153540eed0119d29",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "edf61d14395705e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "14b9ba57eeb70910",
+  "lastOpenFiles": [
+    "azure/azure.md",
+    "azure/204/blob-storage.md",
+    "azure/204/app-service.md",
+    "azure/204/app-functions.md",
+    "2024-03-31.md",
+    "azure/204",
+    "azure/fundamentals/monitoring-tools.md",
+    "azure/fundamentals/managing-deploying-resources.md",
+    "azure/fundamentals/identity-access-security.md",
+    "azure/fundamentals/governance-compliance.md",
+    "azure/fundamentals/cost-management.md",
+    "azure/fundamentals/storage-services.md",
+    "azure/fundamentals/core-architectural-components.md",
+    "azure/fundamentals/compute-networking-services.md",
+    "roadmaps.md",
+    "dotnet-core-development/index.md",
+    "azure/fundamentals/compute-networking-services/virtual-networking.md",
+    "azure/fundamentals/compute-networking-services/azure-vpn.md",
+    "compute-networking-services/azure-vpn.md",
+    "compute-networking-services",
+    "Azure VPN.md",
+    "Untitled.md",
+    "azure/fundamentals/compute-networking-services",
+    "azure/fundamentals",
+    "Untitled.canvas",
+    "2024-03-30.md",
+    "azure",
+    "dotnet-core-development",
+    "Welcome.md"
+  ]
+}
