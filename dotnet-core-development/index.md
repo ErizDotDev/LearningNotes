@@ -3,7 +3,7 @@
 ## Language and Framework
 ---
 
-C#
+[[csharp|🚪 C#]]
 .NET
 .NET CLI
 

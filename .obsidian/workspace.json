@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2168b4260b2b249d",
+        "id": "876e05d8297b5ac0",
         "type": "tabs",
         "children": [
           {
-            "id": "14b9ba57eeb70910",
+            "id": "8bd5f908407071d0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "dotnet-core-development/csharp/getting-started/introduction.md"
+              }
             }
           }
         ]
@@ -138,9 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14b9ba57eeb70910",
+  "active": "8bd5f908407071d0",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/csharp/getting-started",
+    "csharp/getting-started/types-members.md",
+    "csharp/getting-started",
+    "csharp",
+    "dotnet-core-development/index.md",
     "azure/azure.md",
+    "dotnet-core-development/csharp",
     "azure/204/blob-storage.md",
     "azure/204/app-service.md",
     "azure/204/app-functions.md",
@@ -155,7 +171,6 @@
     "azure/fundamentals/core-architectural-components.md",
     "azure/fundamentals/compute-networking-services.md",
     "roadmaps.md",
-    "dotnet-core-development/index.md",
     "azure/fundamentals/compute-networking-services/virtual-networking.md",
     "azure/fundamentals/compute-networking-services/azure-vpn.md",
     "compute-networking-services/azure-vpn.md",

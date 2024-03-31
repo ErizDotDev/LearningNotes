@@ -23,7 +23,7 @@
 
 ### Pending Tasks
 
-- [ ] Create another email for Azure learning: denzelerizdc dot dev dot azurev1 at hotmail dot com
+- [ ] Create another email for Azure learning: denzelerizdc dot dev dot azurev2 at hotmail dot com
 - [ ] Review Storage Blob policy creation on GT Azure portal: [https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage](https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage)
 - [ ] Re-create this exercise: [https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet](https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet)
 
