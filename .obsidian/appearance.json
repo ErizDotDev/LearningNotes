@@ -1,5 +1,6 @@
 {
   "accentColor": "",
-  "textFontFamily": "JetBrainsMono NF",
-  "baseFontSize": 15
+  "textFontFamily": "JetBrains Mono",
+  "baseFontSize": 13,
+  "monospaceFontFamily": "JetBrains Mono"
 }

@@ -20,12 +20,13 @@
 [[azure/204/app-functions|☮ Azure Functions]]
 [[azure/204/app-service|☮ App Service]]
 [[azure/204/blob-storage|☮ Blob Storage]]
+[[azure/204/containers|☮ Azure Container services]]
 
 ### Pending Tasks
 
-- [ ] Create another email for Azure learning: denzelerizdc dot dev dot azurev2 at hotmail dot com
+- [ ] ~~Create another email for Azure learning~~
 - [ ] Review Storage Blob policy creation on GT Azure portal: [https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage](https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage)
-- [ ] Re-create this exercise: [https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet](https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet)
+- [ ] ~~Re-create this exercise: [https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet](https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet)
 
 ### References
 [Course AZ-900T00--A: Microsoft Azure Fundamentals - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/courses/az-900t00)

@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "876e05d8297b5ac0",
+        "id": "f1df77d17a88dc00",
         "type": "tabs",
         "children": [
           {
-            "id": "8bd5f908407071d0",
+            "id": "5b7901717a435957",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "file": "azure/204/containers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "483e529c50b7151e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "azure/fundamentals/compute-networking-services.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "file": "azure/204/containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "file": "azure/204/containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md"
+                "file": "azure/204/containers.md"
               }
             }
           }
@@ -146,16 +158,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8bd5f908407071d0",
+  "active": "5b7901717a435957",
   "lastOpenFiles": [
-    "dotnet-core-development/csharp/csharp.md",
+    "azure/fundamentals/compute-networking-services.md",
+    "azure/204/containers.md",
+    "azure/azure.md",
     "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/getting-started",
     "csharp/getting-started/types-members.md",
     "csharp/getting-started",
     "csharp",
     "dotnet-core-development/index.md",
-    "azure/azure.md",
     "dotnet-core-development/csharp",
     "azure/204/blob-storage.md",
     "azure/204/app-service.md",
@@ -169,7 +183,6 @@
     "azure/fundamentals/cost-management.md",
     "azure/fundamentals/storage-services.md",
     "azure/fundamentals/core-architectural-components.md",
-    "azure/fundamentals/compute-networking-services.md",
     "roadmaps.md",
     "azure/fundamentals/compute-networking-services/virtual-networking.md",
     "azure/fundamentals/compute-networking-services/azure-vpn.md",
