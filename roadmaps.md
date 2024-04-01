@@ -25,7 +25,7 @@
 ### Cloud
 ---
 
-[[azure|☁️ Azure]]
+[[azure-index|☁️ Azure]]
 
 ### Architecture
 ---

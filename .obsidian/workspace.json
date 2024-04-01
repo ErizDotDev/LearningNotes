@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f1df77d17a88dc00",
+        "id": "647642da71e374f4",
         "type": "tabs",
         "children": [
           {
-            "id": "5b7901717a435957",
+            "id": "71ee96dcb1466627",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "azure/204/containers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "483e529c50b7151e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "azure/fundamentals/compute-networking-services.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "azure/204/containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "azure/204/containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "azure/204/containers.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -158,44 +138,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b7901717a435957",
+  "active": "71ee96dcb1466627",
   "lastOpenFiles": [
+    "New Text Document.txt",
+    "dotnet-core-development/csharp/concepts/indexer.md",
+    "dotnet-core-development/csharp/getting-started/program-building-blocks.md",
+    "dotnet-core-development/csharp/getting-started/major-language-areas.md",
+    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/csharp/getting-started/types-members.md",
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/csharp/concepts/properties.md",
+    "dotnet-core-development/csharp/concepts/csharp-concepts.md",
+    "dotnet-core-development/csharp/concepts/nullable-migrations.md",
+    "dotnet-core-development/csharp/concepts/methods.md",
+    "dotnet-core-development/csharp/concepts/nullable-types.md",
+    "dotnet-core-development/csharp/concepts",
+    "dotnet-core-development/csharp/fundamentals/coding-style.md",
+    "dotnet-core-development/csharp/fundamentals/exceptions.md",
+    "dotnet-core-development/csharp/fundamentals/functional-techniques.md",
+    "dotnet-core-development/csharp/fundamentals/anonymous-types.md",
+    "dotnet-core-development/csharp/fundamentals/interfaces.md",
+    "dotnet-core-development/csharp/fundamentals/records.md",
+    "dotnet-core-development/csharp/fundamentals/fundamentals.md",
+    "dotnet-core-development/csharp/fundamentals",
+    "dotnet-core-development/dotnet-core-development-index.md",
+    "azure/azure-index.md",
     "azure/fundamentals/compute-networking-services.md",
     "azure/204/containers.md",
-    "azure/azure.md",
-    "dotnet-core-development/csharp/getting-started/introduction.md",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/getting-started",
     "csharp/getting-started/types-members.md",
     "csharp/getting-started",
     "csharp",
-    "dotnet-core-development/index.md",
     "dotnet-core-development/csharp",
     "azure/204/blob-storage.md",
     "azure/204/app-service.md",
-    "azure/204/app-functions.md",
-    "2024-03-31.md",
     "azure/204",
-    "azure/fundamentals/monitoring-tools.md",
-    "azure/fundamentals/managing-deploying-resources.md",
-    "azure/fundamentals/identity-access-security.md",
-    "azure/fundamentals/governance-compliance.md",
-    "azure/fundamentals/cost-management.md",
-    "azure/fundamentals/storage-services.md",
-    "azure/fundamentals/core-architectural-components.md",
-    "roadmaps.md",
-    "azure/fundamentals/compute-networking-services/virtual-networking.md",
-    "azure/fundamentals/compute-networking-services/azure-vpn.md",
-    "compute-networking-services/azure-vpn.md",
     "compute-networking-services",
-    "Azure VPN.md",
-    "Untitled.md",
     "azure/fundamentals/compute-networking-services",
     "azure/fundamentals",
-    "Untitled.canvas",
-    "2024-03-30.md",
-    "azure",
-    "dotnet-core-development",
-    "Welcome.md"
+    "Untitled.canvas"
   ]
 }

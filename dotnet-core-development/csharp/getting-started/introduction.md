@@ -1,14 +1,12 @@
 # 🏓 Introduction
 
 - Aside from being known as an object oriented language, C# can also be considered as a **component-oriented language**.
-    
     - Component oriented language is a software paradigm that focuses on the development of software through reusable bits and pieces called components that can also be self-contained.
 - C# emphasizes versioning as it aims for programs and libraries written in C# to continuously evolve in a compatible manner.
-    
 
 ### C# Features
 
-- **Garbage collection - automatically get back memory occupied by unused objects and resources.**
+- **Garbage collection** - automatically get back memory occupied by unused objects and resources.
 - **Nullable types**
 - **Exception handling**
 - **Language Integrated Query (LINQ)**
@@ -30,11 +28,15 @@
     - .NET is a virtual execution system also known as the **Common Language Runtime (CLR)**.
     - CLR is Microsoft’s implementation of an international standard called **Common Language Infrastructure (CLI)**.
     - CLI is the basis for creating different environment that makes libraries and languages work seamlessly together.
+
 - A source code written in C# is compiled to **IL (Intermediate Language)** which is CLI compliant.
     - IL code and other resources are stored in an assembly file (or .dll files).
     - Assembly contains a manifest that provides information about the assembly’s types, version, etc.
+
 - Once a C# program is executed, the assembly is loaded into the CLR.
+
 - **CLR**
+	- Common Language Runtime
     - Translates a compiled C# code (in IL format) into machine readable code (”unmanaged code”) via just in time (JIT) compilation.
     - Any environment that has the CLR in it will be able to read a compiled C# code.
     - In .NET 7, C# can be compiled directly to machine code without the intervention of CLR.
@@ -43,8 +45,8 @@
 
 ### **Value Types vs. Reference Types**
 
-- **Value Type** contains the actual data.
-- **Reference Type** stores a reference to the data, commonly known as _**objects**_.
+- **[[types-members#**Value Types**|Value Types]]** contains the actual data.
+- **[[types-members#**Reference Types**|Reference Types]]** stores a reference to the data, commonly known as _**objects**_.
 
 ---
 
@@ -66,7 +68,7 @@ In the scenario where a _value type_ is passed as an argument to a method, the v
 
 - Class Type
 - Array Type
-- Interface Type
+- [[interfaces|Interface Type]]
 - Delegate Type
 
 **Struct**
@@ -96,11 +98,14 @@ In the scenario where a _value type_ is passed as an argument to a method, the v
 - Values of reference types are immediately viewed as an object, while value of a value type can be an object by using the boxing and the unboxing operations.
 - When a value type’s value is assigned to an object type, a box is allocated to hold this value. This box is an instance of a reference type and the value of the value type is copied into this instance.
 - To unbox, a cast is needed to convert an object value to the receiving type. If the cast succeeds, then it successfully copies the value to the receiving value type.
+
 - Both operations are computationally expensive processes.
     - When a value type is boxed, new object must be allocated on the heap and constructed.
+
 - **Boxing**
-    - When a value is boxed, a copy of the value-type value is stored in a different memory location.
+    - When a value type is boxed, a copy of the value-type value is stored in a different memory location.
         - This means any changes to the value type will not affect the reference type that was created when the value is boxed.
+
 - Importance:
     - Way to differentiate value types and reference types.
     - Gain deeper understanding of how C# collection works.
