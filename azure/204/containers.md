@@ -5,6 +5,10 @@
 	[[containers#Different Tiers|Different Tiers]]
 	[[containers#Registry storage features|Registry storage features]]
 	[[containers#Azure Container Registry Tasks|Azure Container Registry Tasks]]
+	[[containers#Dockerfile|Dockerfile]]
+[[containers#Azure Container Instances|Azure Container Instances]]
+	[[containers#Container groups|Container groups]]
+	[[containers#Restart policy|Restart policy]]
 
 ## Azure Container Registry
 
@@ -91,3 +95,76 @@
 - For ARM architectures, specify the variant in OS/architecture/variant format.
 	- To specify the OS + architecture combo, follow the same format above but without the variant variable.
 
+### Dockerfile
+
+- Script that contains instructions on how to build a Docker image.
+- Contains the following information:
+	- Parent image used to create the new image.
+	- Commands to update the OS and install software/packages.
+	- Build included artifacts such as a developed application. (eg. Keycloak implementation)
+	- Services to be exposed, eg. network and storage configuration
+	- Commands to run when the container
+
+---
+
+## Azure Container Instances
+
+- The fastest and simplest way to run a container in Azure without maintaining a virtual machine, which is the most common option when hosting a container in the cloud.
+- Best for scenarios that can operate in isolated containers such as simple application, task automation and build jobs.
+
+- **Benefits:**
+	- *Fast Startup*
+	- *Container Access*. Expose your container groups to the internet with a public IP and fully qualified domain name. (FQDN)
+	- *Hypervisor-level security*. Container is isolated like when it is hosted in a VM.
+	- *Minimal customer data footprint*. Container runs with minimal customer data required.
+	- *Custom hardware specifications*. 
+		- Allows exact specifications of CPU cores and memory that are required.
+		- Azure will allocate resources in the container group depending on the requested specifications one container needs for its instance.
+	- *Persistent storage*. Mount Azure Files shares directly to a container for persisting and retrieving of data.
+	- *Features are available for both Linux and Windows*. 
+
+### Container groups
+
+- Top level resource in ACI that hosts containers within the same host machine.
+- Containers in a container group share the same storage volume, network configuration, lifecycle and resources.
+- Multi-container groups is only available in Linux.
+	- Windows containers only support single instances.
+
+- The best use case for multi-container groups is dividing a single functional task into multiple container instances. Examples include:
+	- An application container and a logging container
+		- The logging container will collate all logs and metrics gathered from the application and persist them in long term storage.
+	- An application container and a monitoring container
+		- A monitoring container periodically makes a request to the application to check its health and ensure that it is running and responding.
+	- Front-end container and back-end container.
+
+- **Deployment**
+	- **Two ways of deploying a multi-container group.
+		- *[[managing-deploying-resources#ARM template|Resource Manager template]]
+			- Use this only when there are other services that need to be provisioned together with the container like a Azure Files share.
+		- *YAML file*
+			- Recommended for provisioning of container instances ONLY.
+
+- **Networking**
+	- **A container group share an IP address and a port namespace on that IP address.
+			- A port namespace allows each container instance to listen to the same port number without conflict.
+		- The ports will come in handy for communication purposes between each container instances and other services both in public and private environments.
+
+- **Storage**
+	- **The following storage medium can be mounted on the container group.
+		- Azure Files share
+		- Cloned git repository
+		- Empty directory
+		- Secret
+
+### Restart policy
+
+- Because of how easy and fast the ACI makes it to build and deploy container instances, it allowed for the utilization of run-once tasks like building, testing and deploying container instances.
+- ACIs are charged by the second, which makes it important to have a restart policy mechanism enabled to protect the user from incurring changes against underutilized container instances that are turned on 24/7.
+- The restart policy allows a container instance to be turned off after it completed its workload.
+
+- **Available restart policy options**
+	- `Always` - Default value.
+	- `Never` - Container instance will run at most once.
+	- `OnFailure` - Container instance will run at least once.
+
+- When Azure stops an container, either because the application inside the container is set up this way or because of failure, and the restart policy of the specified is `Never` or `OnFailure`, the container status will then become `Terminated`.

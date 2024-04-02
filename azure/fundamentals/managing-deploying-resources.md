@@ -60,18 +60,16 @@
 
 ## Azure Resource Manager
 
-- Deployment and management service of Azure.
-    
+- Deployment and management service of Azure.    
 - ARM is involved when resources are being created, maintained or deleted.
     
 - Request flow:
-    
     - Azure PowerShell or CLI makes a request to ARM
     - ARM receives the request
     - ARM authenticates and authorizes the request
     - ARM routes the request to the appropriate service.
+
 - RBAC is natively integrated to ARM so you can apply access control to all services.
-    
 
 ### ARM template
 
