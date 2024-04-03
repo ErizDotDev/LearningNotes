@@ -1,4 +1,5 @@
 # 🕋 Cost management
+---
 
 Overview
 	[[cost-management#Resource type|Resource type]]

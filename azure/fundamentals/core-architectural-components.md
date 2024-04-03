@@ -25,14 +25,12 @@
 ## Physical Infrastructure
 
 ### Regions
-
 ^e6a4db
 
 - At least one, or multiple data centers placed in different parts of the world.
 - Characterized by countries or continent sections (e.g. east-asia, west-us) as names.
 
 ### Availability Zones
-
 ^a6b124
 
 - Logical grouping of data centers created to ensure that cloud services are always available.
@@ -44,7 +42,6 @@
     - Non-zonal services: Services that are always available and resilient to zone-wide outages.
 
 ### Region Pairs
-
 ^5667e3
 
 - Provides additional resiliency to services deployed in the cloud.
@@ -57,7 +54,6 @@
 - Pairings are not always bi-directional. For example, South India pairs with West India, but West India is not region paired with South India. Instead, West India is paired with Central India.
 
 ### Sovereign Regions
-
 ^ecc128
 
 - Azure instances that are isolated from the main Azure instances.

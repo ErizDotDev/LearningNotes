@@ -1,4 +1,5 @@
-# Monitoring tools
+# 🕋 Monitoring tools
+---
 
 [[monitoring-tools#Azure Advisor|Azure Advisor]]
 [[monitoring-tools#Azure Service Health|Azure Service Health]]

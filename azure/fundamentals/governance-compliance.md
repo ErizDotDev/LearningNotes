@@ -1,4 +1,5 @@
 # 🕋 Governance and compliance
+---
 
 [[governance-compliance#Microsoft Purview|Microsoft Purview]]
 	[[governance-compliance#Risk and compliance solutions|Risk and compliance solutions]]

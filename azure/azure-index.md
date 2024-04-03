@@ -22,6 +22,11 @@
 [[azure/204/blob-storage|☮ Blob Storage]]
 [[azure/204/containers|☮ Azure Container services]]
 
+## Miscellaneous
+---
+
+[[azure/commands|⏲ Azure Commands List]]
+
 ### Pending Tasks
 
 - [ ] ~~Create another email for Azure learning~~

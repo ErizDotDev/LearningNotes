@@ -1,4 +1,5 @@
 # ☮ Azure Container services
+---
 
 [[containers#Azure Container Registry|Azure Container Registry]]
 	[[containers#Use Cases|Use Cases]]
@@ -9,7 +10,9 @@
 [[containers#Azure Container Instances|Azure Container Instances]]
 	[[containers#Container groups|Container groups]]
 	[[containers#Restart policy|Restart policy]]
-
+	[[containers#Environment variables|Environment variables]]
+	[[containers#Mounting an Azure File share|Mounting an Azure File share]]
+	
 ## Azure Container Registry
 
 - A private Docker registry service that is based on the open-source Docker Registry 2.0.
@@ -168,3 +171,56 @@
 	- `OnFailure` - Container instance will run at least once.
 
 - When Azure stops an container, either because the application inside the container is set up this way or because of failure, and the restart policy of the specified is `Never` or `OnFailure`, the container status will then become `Terminated`.
+
+### Environment variables
+
+- Environment variables are used to provide dynamic configuration to your application that is running in the container.
+- They are passed to the docker container via script or command during the container creation.
+- To create a container with environment variables: ^4de26a
+
+```bash
+az container create \
+	--resource-group <resource_group_name> \
+	--name <container_name> \
+	--image <image_url> \
+	--restart-policy OnFailure \
+	--environment-variables 'NumWords'='5' 'MinLength'='8'
+```
+
+- Notice that the environment variables come in the following key value, space-delimited format: `'NumWords'='5' 'MinLength'='8'`
+
+- It is possible to add secure values as an environment variable.
+	- A secure value holds important information like passwords and keys.
+	- Secure values, except for its name, won't be displayed on the Portal UI.
+	- In the YAML file, replace `value` property with `secureValue` to define an environment variable with secure value.
+	- [[commands#^f887f8|To create a container instance with a YAML file]]
+
+### Mounting an Azure File share
+
+- Azure Container Instances are stateless by default.
+	- If the container crashes or stops, all of its state is lost.
+
+- To persist the state during the lifetime of its container and beyond, an external store, [[storage-services#Azure Files|Azure Files]] share for instance, should be mounted to it.
+
+- **Limitations**
+	- Azure Files can only be mounted on Linux containers.
+	- The Linux container should be run as `root` if Azure File share is going to be mounted.
+	- Only supports CIFS (Common Internet File System) protocol for file sharing.
+
+- When [[commands#^db3187|mounting an Azure Files store]], ensure that the `--dns-name-label` is unique within the region where the container instance is located and created.
+	- Update this value when you receive a **DNS name label** error message.
+
+- It is better to deploy a container group with a mounted Azure Files using the YAML approach.
+
+- When deploying and mounting multiple file stores, aside from YAML file, the developer can prepare an ARM template.
+	- The ARM template should contain the following sections:
+		- `volumes`
+			- This is where the file share configurations take place.
+			- Accepts an array.
+		- `volumeMounts`:
+			- Part of the container group's section.
+			- In the mount path, ensure that the `shareName` defined in the `volumes` section is being used.
+
+---
+
+## 

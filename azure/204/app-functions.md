@@ -1,4 +1,5 @@
 # ☮ Azure Functions
+---
 
 Overview
 	[[app-functions#Difference between Azure Functions and Azure Logic Apps|Difference between Azure Functions and Azure Logic Apps]]
@@ -109,13 +110,12 @@ Overview
 ## Development
 
 - Two components of an Azure Function
-    
     - The code
     - The config file, specifically, _function.json_
         - Defines the function’s trigger, bindings and other configuration settings.
         - Can accept multiple bindings
+
 - Required binding properties in configuration
-    
     - Name of binding
         - Make sure to know the assigned name of a binding or a trigger to be used in this field.
             - Each Azure service has an assigned value.
@@ -125,22 +125,21 @@ Overview
         - In C# or Java, this name is the name of the method parameter expected in the function.
         - For output binding, to use the return value of the function, use `$return` as name.
     - Connection strings of specific Azure resource
+
 - Function App code written in C# or Java can forego the configuration file and use decorators or attributes to give information about the trigger or binding that will be used by the function.
-    
 - Javascript code mimics similarly to what AWS Lambda code looks like.
-    
+
 - Function application is consolidation of one or more functions.
-    
     - One application, even with multiple functions, will share the same deployment plan, deployment method and runtime version.
     - Required to be in the same language.
     - All functions that are part of an application are inside a specific folder with a host configuration file _host.json_
         - The **host.json** contains runtime specific configuration.
         - The folder structure will also contain the bin folder where the binaries and compiled code is generated.
+
 - Avoid maintaining or updating code in Azure portal.
-    
     - Make all the necessary code and config changes in local environment.
+
 - When an Azure Functions app is created, the following resources are created:
-    
     - The Function app;
     - Storage account where all the assets for the Function app is being stored;
     - Consumption plan - provides serverless execution environment for the functions;

@@ -1,4 +1,5 @@
-# App Service
+# ☮ App Service
+---
 
 Overview
 	[[app-service#Limitations|Limitations]]
@@ -48,6 +49,20 @@ Overview
 - Not every feature of Linux hosting is available in Azure portal.
 - Disk latency is higher and more varied on built-in App Service images for Linux as opposed to custom images;
     - Use custom image if there is a need for high-speed read latency for files and assets in the application;
+
+### Commands
+
+- To list down all supported runtimes for App Service applications:
+
+```bash
+az webapp list-runtimes
+```
+
+- Use the `os-type` option to specify a specific OS for target runtimes:
+
+```bash
+az webapp list-runtimes --os-type linux
+```
 
 ---
 
@@ -104,8 +119,8 @@ Overview
 
 ### Manual
 
-- Via Git: App Service web apps provide a Git remote url where developers can push their changes to deploy the app;
-- Via Azure CLI: `webapp up` packages your code and deploys it and if a web app is not yet created it will create one.
+- Via Git: App Service web apps provide a Git remote URL where developers can push their changes to deploy the app;
+- Via Azure CLI: `az webapp up` command packages your code and deploys it and if a web app is not yet created it will create one.
 - Zip deploy: Use `curl` or other HTTP utility tool to send a ZIP of the application to Azure App Service
 - FTP or through SFTP.
 
@@ -188,13 +203,35 @@ Overview
     - All applications hosted in a single Standard plan run in the same worker that can be scaled based on demand, by spawning new workers.
 
 **Outbound IP addresses**
-
 - All the Dedicated compute plan variants except the Premium v2+ variants (Premium v2 and Premium v3) all share the same worker VM.
 - Premium v2 and v3 have their own worker VMs each with their own performance upgrades compared to the previous.
 - Changing VM families (or plan variants) will also update the outbound IP addresses that is available for use.
     - Each VM family (or plan variant) has their own assigned IP addresses that they can utilize.
     - All apps under that plan all share the same outbound IP addresses.
 - Available for viewing on the Properties tab on the App Service portal interface.
+
+### Commands
+
+- To list down all the outbound IP addresses used by your App Service application:
+
+```bash
+az webapp show \
+	--resource-group <group_name> \
+	--name <app_name> \
+	--query outboundIpAddresses \
+	--output tsv
+```
+
+- To find all possible outbound IP addresses for your app:
+
+```bash
+az webapp show \
+	az webapp show \
+	--resource-group <group_name> \
+	--name <app_name> \
+	--query possibleOutboundIpAddresses \
+	--output tsv
+```
 
 ---
 
@@ -444,19 +481,18 @@ Overview
 - By default, all traffic from the URL of your App Service application goes to the production slot.
     
 - It can be configured so that some of the traffic can be directed to another slot.
-    
     - This is useful when showcasing a new feature that you want users to give you feedback on, but this feature is not to be released yet in production.
+
 - When you configure to route traffic automatically, you need to specify the number of requests in percentage that will be routed to the staging slot.
     
 - There is an available HTTP header, `x-ms-routing-name`, that can inform the user in client browser on what slot they were directed to.
-    
     - If the user has been redirected to the non-production slot, the value of the header will be `x-ms-routing-name=staging`.
         - Otherwise, the value of the header is `x-ms-routing-name=self`.
+
 - When you configure to route traffic manually, you can instead use the header as query parameters that can be appended on your application’s URL.
-    
     - The link can then be used by displaying a link to your application inviting users to view the new feature of your application.
         - This way the user can opt in to view the preview of your application’s new feature in the staging environment, if they want to.
+
 - By default, the percentage value for traffic routing configuration is 0%.
-    
     - If this is the case, even if the users is trying to use the link to go the preview version of the application, they will not be able to access it, because App Service is restricting traffic to the staging slots.
     - This is advanced use case where the staging slot is hidden from the public while an internal team is testing the features on the slot.
