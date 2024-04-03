@@ -1,4 +1,4 @@
-# Coding style
+# 🏓 Coding style
 
 ## C# identifier naming rules and conventions
 

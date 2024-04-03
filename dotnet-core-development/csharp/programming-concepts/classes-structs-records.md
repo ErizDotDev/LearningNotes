@@ -1,4 +1,4 @@
-# Classes, Structs, and Records
+# ⭐ Classes, Structs, and Records
 
 [[dotnet-core-development/csharp/programming-concepts/classes-structs-records/polymorphism|Polymorphism]]
 [[dotnet-core-development/csharp/programming-concepts/classes-structs-records/members|Members]]
@@ -11,6 +11,7 @@
 	[[classes-structs-records#Object Initializer|Object Initializer]]
 	[[classes-structs-records#Collection Initializer|Collection Initializer]]
 [[classes-structs-records#Nested Type|Nested Type]]
+[[classes-structs-records#Partial classes and methods|Partial classes and methods]]
 
 ## Structs
 
@@ -128,8 +129,8 @@ ContainingType.Nested nested = new ContainingType.Nested();
     - All parts should have the same access level.
     - All parts should share the same feature: If one part of the partial class is sealed, the entire class is sealed. If one part of the partial class is abstract, the entire class is abstract.
 - At compile time, the following elements assigned on these partial classes will be combined, and the resulting type will contain all the assigned attributes on their partial state:
-    - Attributes
-    - Interfaces
+    - [[reflection-attributes|Attributes]]
+    - [[interfaces|Interfaces]]
     - Members
 
 ### Partial methods

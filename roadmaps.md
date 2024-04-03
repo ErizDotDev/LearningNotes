@@ -4,7 +4,7 @@
 ### Languages and Frameworks
 ---
 
-[💻 .NET Core](obsidian://open?vault=LearningNotes&file=dotnet-core-development%2Findex)
+[[dotnet-core-development-index|💻 .NET Core]]
 💻 React
 💻 Angular
 💻 Python

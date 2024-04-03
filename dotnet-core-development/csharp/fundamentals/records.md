@@ -1,4 +1,4 @@
-# Records
+# 🏓 Records
 
 - Records are immutable.
 - Unlike classes, overriding the `ToString()` method is unnecessary as the language innately provides a behavior for records to display values of a record’s properties.

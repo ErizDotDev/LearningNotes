@@ -1,4 +1,4 @@
-# Exceptions and errors
+# ⭐ Exceptions and errors
 
 ### Using exceptions
 

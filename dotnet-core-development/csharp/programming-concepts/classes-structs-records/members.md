@@ -51,6 +51,9 @@
     - Static constructor is called only one time
     - Static class remains in the memory for the lifetime of the application domain in which your program resides.
 
+- Instead of declaring static methods like this `Math.Max(value, 100);` you can instead declare a static using by declaring it like this instead: `using static System.Math` and then the code earlier will be able to use the Max method without declaring the Math namespace.
+- What this does is it retrieves all methods from the class Math.
+
 ### Static members
 
 - A non-static class can contain static members
@@ -71,6 +74,8 @@
     - A static method call generates a call instruction to MSIL (MS Intermediate Language)
     - An instance method call generates a `callvirt instruction` which also checks for null object references.
     - The performance difference between the two, most of the time, is insignificant.
+
+- 
 
 ---
 

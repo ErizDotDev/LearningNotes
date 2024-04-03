@@ -1,4 +1,4 @@
-# Generics
+# ⭐ Generics
 
 ---
 

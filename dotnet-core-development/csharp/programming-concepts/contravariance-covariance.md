@@ -1,4 +1,4 @@
-# Covariance and contravariance
+# 🏓 Covariance and contravariance
 
 ---
 

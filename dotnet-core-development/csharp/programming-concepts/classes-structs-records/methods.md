@@ -21,7 +21,7 @@
     - This variable contains variables from the method where the local method is contained.
         - This includes method parameters, and all local variables in that method.
 - Local methods cannot contain accessibility modifiers as they are all private by default.
-- Starting in C# 9.0, attributes can also be applied to local methods and its method parameters.
+- Starting in C# 9.0, [[reflection-attributes#**Attributes**|attributes]] can also be applied to local methods and its method parameters.
 - Local methods can act as iterators.
 - Code samples demonstrating local methods is available in the `local-functions` branch of the `CSharp-Lab` solution.
 

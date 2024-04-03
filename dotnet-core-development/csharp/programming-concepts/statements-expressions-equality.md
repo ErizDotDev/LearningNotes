@@ -1,4 +1,4 @@
-# Statements, expressions and equality
+# ⭐ Statements, expressions and equality
 
 ---
 

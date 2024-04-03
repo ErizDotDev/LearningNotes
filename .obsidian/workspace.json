@@ -4,35 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0e2180b471d06c02",
+        "id": "7ad689f3a5b5ceea",
         "type": "tabs",
         "children": [
           {
-            "id": "0e0989fb4dafbae7",
+            "id": "0a07011f77930c39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "azure/204/containers.md",
+                "file": "dotnet-core-development/csharp/csharp.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83f9035878668b50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "azure/commands.md",
-                "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +51,7 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "azure/commands.md",
+                "file": "dotnet-core-development/csharp/csharp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "azure/commands.md",
+                "file": "dotnet-core-development/csharp/csharp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "azure/commands.md"
+                "file": "dotnet-core-development/csharp/csharp.md"
               }
             }
           }
@@ -159,44 +147,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83f9035878668b50",
+  "active": "0a07011f77930c39",
   "lastOpenFiles": [
-    "azure/204/containers.md",
-    "azure/commands.md",
-    "azure/fundamentals/storage-services.md",
-    "azure/204/app-service.md",
-    "azure/204/blob-storage.md",
-    "azure/azure-index.md",
-    "azure/204/app-functions.md",
-    "azure/fundamentals/core-architectural-components.md",
-    "azure/fundamentals/compute-networking-services/azure-vpn.md",
-    "azure/fundamentals/compute-networking-services/virtual-networking.md",
-    "azure/fundamentals/monitoring-tools.md",
-    "azure/fundamentals/managing-deploying-resources.md",
-    "azure/fundamentals/identity-access-security.md",
-    "azure/fundamentals/governance-compliance.md",
-    "azure/fundamentals/cost-management.md",
-    "azure/fundamentals/compute-networking-services.md",
+    "dotnet-core-development/csharp/misc/async-programming.md",
+    "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
+    "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/csharp.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records 1.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
-    "dotnet-core-development/csharp/concepts/methods.md",
-    "dotnet-core-development/csharp/getting-started/program-building-blocks.md",
-    "dotnet-core-development/csharp/getting-started/major-language-areas.md",
-    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/csharp/misc/miscellaneous.md",
+    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
+    "dotnet-core-development/csharp/programming-concepts/strings.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
+    "dotnet-core-development/csharp/misc/linq.md",
+    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
+    "dotnet-core-development/csharp/misc/linq/runtime-query.md",
+    "dotnet-core-development/csharp/misc/linq/join-operations.md",
+    "dotnet-core-development/csharp/misc/linq/inner-joins.md",
+    "dotnet-core-development/csharp/misc/linq/type-relationships.md",
+    "dotnet-core-development/csharp/misc/linq/query-expression.md",
+    "dotnet-core-development/csharp/misc/linq/introduction.md",
+    "dotnet-core-development/csharp/misc/linq",
+    "dotnet-core-development/csharp/misc/indices-ranges.md",
+    "dotnet-core-development/csharp/misc",
+    "dotnet-core-development/csharp/advanced/reflection-attributes.md",
+    "dotnet-core-development/csharp/advanced/expression-trees.md",
+    "dotnet-core-development/csharp/concepts/properties.md",
+    "dotnet-core-development/csharp/concepts/nullable-types.md",
+    "dotnet-core-development/csharp/concepts/nullable-migrations.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/advanced",
+    "dotnet-core-development/csharp/programming-concepts/types.md",
+    "dotnet-core-development/csharp/programming-concepts/statements-expressions-equality.md",
+    "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records",
     "dotnet-core-development/csharp/programming-concepts",
     "New Text Document.txt",
     "dotnet-core-development/csharp/concepts",
     "dotnet-core-development/csharp/fundamentals",
     "dotnet-core-development/csharp/getting-started",
-    "csharp/getting-started",
-    "csharp",
-    "dotnet-core-development/csharp",
-    "azure/204",
     "Untitled.canvas"
   ]
 }

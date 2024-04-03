@@ -1,4 +1,4 @@
-# Interfaces
+# ⭐ Interfaces
 
 - Interfaces is used to define a behavior of a class which does not necessarily have a “is a” relationship.
 - For C# versions earlier than 8.0, interfaces are similar with abstract classes without the properties definition. No default implementation for any defined methods was necessary.

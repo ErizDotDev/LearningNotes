@@ -1,4 +1,4 @@
-# **Delegates**
+# ⭐ **Delegates**
 
 ---
 

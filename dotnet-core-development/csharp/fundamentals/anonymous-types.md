@@ -1,4 +1,4 @@
-# Anonymous Types
+# 🏓 Anonymous Types
 
 - Anonymous types contain public read-only properties.
 - An anonymous type can not be null, an anonymous function, or a pointer type.

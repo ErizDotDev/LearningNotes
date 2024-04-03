@@ -1,4 +1,4 @@
-# Nullable Reference Types
+# 🏓 Nullable Reference Types
 
 ---
 
@@ -27,7 +27,7 @@
 
 - This feature is not immediately available for compiler generated code.
 
-### Attributes on API signatures
+### [[reflection-attributes#**Attributes**|Attributes]] on API signatures
 
 - The null state analysis needs hints from developers to understand the semantics of their APIs.
     - Some APIs provides null checks and should change the null-state of their variable from maybe-null to not-null.

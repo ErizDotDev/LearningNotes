@@ -1,4 +1,4 @@
-# Properties
+# 🏓 Properties
 
 ---
 
@@ -98,7 +98,7 @@ public class Person
 
    - This is used so that properties are computed only once.
 
-### Attaching attributes to auto-implemented properties
+### Attaching [[reflection-attributes#**Attributes**|attributes]] to auto-implemented properties
 
 - Attributes can only be attached on fields, not on backing properties.
 - To use said attributes on properties, add the `field:` prefix then place the name of attribute. Here’s an example

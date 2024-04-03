@@ -1,4 +1,4 @@
-# Major language areas
+# 🏓 Major language areas
 
 ### **Arrays, collections, and LINQ**
 

@@ -1,4 +1,4 @@
-# Distinguishing delegates and events
+# ⭐ Distinguishing delegates and events
 
 ---
 

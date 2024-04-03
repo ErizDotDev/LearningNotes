@@ -57,3 +57,7 @@
 [[dotnet-core-development/csharp/misc/async-programming|⭐ Asynchronous programming]]
 [[dotnet-core-development/csharp/misc/miscellaneous|🏓 Miscellaneous]]
 
+
+### To-Do
+
+- [ ] Re-read and re-analyze these notes and the article once you have a good grasp on the stack and heap concept.

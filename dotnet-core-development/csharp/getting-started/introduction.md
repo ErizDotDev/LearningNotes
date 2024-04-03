@@ -1,4 +1,4 @@
-# Introduction
+# ⭐ Introduction
 
 - Aside from being known as an object oriented language, C# can also be considered as a **component-oriented language**.
     - Component oriented language is a software paradigm that focuses on the development of software through reusable bits and pieces called components that can also be self-contained.

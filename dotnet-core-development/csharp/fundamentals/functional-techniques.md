@@ -1,4 +1,4 @@
-# Functional Techniques
+# 🏓 Functional Techniques
 
 ## Pattern matching
 

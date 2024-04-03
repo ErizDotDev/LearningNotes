@@ -1,4 +1,4 @@
-# Fundamentals
+# 🏓 Fundamentals
 
 ## Program Structure
 

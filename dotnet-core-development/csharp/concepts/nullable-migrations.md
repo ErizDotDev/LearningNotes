@@ -1,4 +1,4 @@
-# Nullable Reference Migrations
+# 🏓 Nullable Reference Migrations
 
 ---
 
@@ -54,7 +54,7 @@
     - Identify which variables, method parameters and return values are expecting null values or not.
     - The goal in this step is not only fix the warnings, but informing the compiler which variables should be monitored for null values and not.
 
-- Use attributes to extend type annotations
+- Use [[reflection-attributes#**Attributes**|attributes]] to extend type annotations
     - Meant for API request and response object validation as API have rules as to when a certain field has a null or not null value.
 
 - Finally, set the project’s Nullable property to enabled
