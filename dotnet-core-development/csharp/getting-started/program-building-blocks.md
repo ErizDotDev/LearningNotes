@@ -6,7 +6,7 @@
 - Instance methods can access both static and non-static members
 - Static methods will not be able to access `this`
 
-### Why use static?
+### Why use [[members#Static classes and members|static]]?
 
 - Static classes provides an easy way to access class members with an expectation that behavior will not change regardless of the object that will use it. (example: Math class)
 - Good for utility classes
@@ -68,7 +68,7 @@ public T this[int index]
 
 - Can be overloaded, as long as the number or type of the parameters are different.
 
-### Events
+### [[events|Events]]
 
 - provides a different way to be notified for when a particular action.
 - possible use cases: code analytics + logging

@@ -35,7 +35,7 @@ public class Person
 
 ### Init-only
 
-- _Object initializer_ is a way to define property values without invoking a constructor. Here’s an example.
+- _[[classes-structs-records#**Object Initializer**|Object initializer]]_ is a way to define property values without invoking a constructor. Here’s an example.
 
 ```csharp
 var person = new Person

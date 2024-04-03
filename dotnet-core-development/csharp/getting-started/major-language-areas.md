@@ -19,11 +19,11 @@
 Console.WriteLine($"The date today is: {weatherData.Date:MM-dd-yyyy}");
 ```
 
-### Delegates and lambda expressions
+### [[delegates|Delegates]] and lambda expressions
 
 - Delegates enables functions to become variables and be passed into methods.
 - To pass in a callback function, we use the type `Function`.
-- Lambda expression - anonymous function, or inline functions, that are created when declared.
+- Lambda expression - anonymous function, or inline functions, that are created when declared. ^3a95ec
 
 ### Attributes
 
