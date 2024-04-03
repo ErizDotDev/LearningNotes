@@ -13,9 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/csharp/csharp.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
                 "mode": "source",
                 "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afaee6c589e8f8c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/csharp/csharp.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/csharp/csharp.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/csharp/csharp.md"
+                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md"
               }
             }
           }
@@ -149,10 +161,29 @@
   },
   "active": "0a07011f77930c39",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet/concepts/miscellaneous.md",
+    "dotnet-core-development/dotnet/concepts/assemblies.md",
+    "dotnet-core-development/dotnet/concepts/overview.md",
+    "dotnet-core-development/dotnet/fundamental-components",
+    "dotnet-core-development/dotnet/concepts/assemblies/strong-named-assemblies.md",
+    "dotnet-core-development/dotnet/concepts/assemblies/reference-assemblies.md",
+    "dotnet-core-development/dotnet/concepts/assemblies",
+    "Assembly.md",
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/dotnet/concepts",
+    "dotnet-core-development/dotnet-core-development-index.md",
+    "dotnet-core-development/dotnet",
+    "dotnet-core-development/dotnet.md",
+    "dotnet-core-development/libs/polly.md",
+    "database/sql-server.md",
+    "dotnet-core-development/libs",
+    "database",
     "dotnet-core-development/csharp/misc/async-programming.md",
     "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
     "dotnet-core-development/csharp/misc/async-programming",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/programming-concepts/strings.md",
@@ -163,28 +194,9 @@
     "dotnet-core-development/csharp/misc/linq/runtime-query.md",
     "dotnet-core-development/csharp/misc/linq/join-operations.md",
     "dotnet-core-development/csharp/misc/linq/inner-joins.md",
-    "dotnet-core-development/csharp/misc/linq/type-relationships.md",
-    "dotnet-core-development/csharp/misc/linq/query-expression.md",
-    "dotnet-core-development/csharp/misc/linq/introduction.md",
     "dotnet-core-development/csharp/misc/linq",
-    "dotnet-core-development/csharp/misc/indices-ranges.md",
     "dotnet-core-development/csharp/misc",
-    "dotnet-core-development/csharp/advanced/reflection-attributes.md",
-    "dotnet-core-development/csharp/advanced/expression-trees.md",
-    "dotnet-core-development/csharp/concepts/properties.md",
-    "dotnet-core-development/csharp/concepts/nullable-types.md",
-    "dotnet-core-development/csharp/concepts/nullable-migrations.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
     "dotnet-core-development/csharp/advanced",
-    "dotnet-core-development/csharp/programming-concepts/types.md",
-    "dotnet-core-development/csharp/programming-concepts/statements-expressions-equality.md",
-    "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records",
-    "dotnet-core-development/csharp/programming-concepts",
-    "New Text Document.txt",
-    "dotnet-core-development/csharp/concepts",
-    "dotnet-core-development/csharp/fundamentals",
-    "dotnet-core-development/csharp/getting-started",
     "Untitled.canvas"
   ]
 }
