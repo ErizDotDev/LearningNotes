@@ -4,29 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "7ad689f3a5b5ceea",
+        "id": "0e2180b471d06c02",
         "type": "tabs",
         "children": [
           {
-            "id": "0a07011f77930c39",
+            "id": "0e0989fb4dafbae7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+                "file": "azure/204/containers.md",
                 "mode": "source",
-                "backlinks": false,
                 "source": false
               }
             }
           },
           {
-            "id": "afaee6c589e8f8c1",
+            "id": "83f9035878668b50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
+                "file": "azure/commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,7 +62,7 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -78,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+                "file": "azure/204/containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+                "file": "azure/204/containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md"
+                "file": "azure/204/containers.md"
               }
             }
           }
@@ -159,44 +159,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a07011f77930c39",
+  "active": "0e0989fb4dafbae7",
   "lastOpenFiles": [
-    "dotnet-core-development/csharp/getting-started/introduction.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
-    "dotnet-core-development/dotnet/dotnet.md",
-    "dotnet-core-development/dotnet/concepts/miscellaneous.md",
-    "dotnet-core-development/dotnet/concepts/assemblies.md",
-    "dotnet-core-development/dotnet/concepts/overview.md",
-    "dotnet-core-development/dotnet/fundamental-components",
+    "dotnet-core-development/libs/polly.md",
+    "dotnet-core-development/libs",
     "dotnet-core-development/dotnet/concepts/assemblies/strong-named-assemblies.md",
     "dotnet-core-development/dotnet/concepts/assemblies/reference-assemblies.md",
+    "dotnet-core-development/dotnet/concepts/miscellaneous.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/dotnet/concepts/overview.md",
+    "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/dotnet/concepts/assemblies",
-    "Assembly.md",
-    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/dotnet/fundamental-components",
+    "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet/concepts",
-    "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/dotnet",
-    "dotnet-core-development/dotnet.md",
-    "dotnet-core-development/libs/polly.md",
-    "database/sql-server.md",
-    "dotnet-core-development/libs",
-    "database",
-    "dotnet-core-development/csharp/misc/async-programming.md",
-    "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
-    "dotnet-core-development/csharp/misc/async-programming",
-    "dotnet-core-development/csharp/misc/miscellaneous.md",
-    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/programming-concepts/strings.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
-    "dotnet-core-development/csharp/misc/linq.md",
-    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
+    "dotnet-core-development/csharp/misc/linq/type-relationships.md",
+    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/misc/linq/runtime-query.md",
+    "dotnet-core-development/csharp/misc/linq/introduction.md",
+    "dotnet-core-development/csharp/misc/linq/query-expression.md",
     "dotnet-core-development/csharp/misc/linq/join-operations.md",
+    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "dotnet-core-development/csharp/misc/linq/inner-joins.md",
+    "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
+    "dotnet-core-development/csharp/misc/linq.md",
+    "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/misc/linq",
+    "dotnet-core-development/csharp/misc/indices-ranges.md",
+    "dotnet-core-development/csharp/misc/async-programming.md",
+    "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/misc",
+    "dotnet-core-development/csharp/advanced/reflection-attributes.md",
+    "dotnet-core-development/csharp/advanced/expression-trees.md",
     "dotnet-core-development/csharp/advanced",
+    "database/sql-server.md",
+    "database",
+    "azure/fundamentals/compute-networking-services.md",
     "Untitled.canvas"
   ]
 }
