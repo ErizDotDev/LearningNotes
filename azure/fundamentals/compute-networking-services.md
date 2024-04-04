@@ -47,7 +47,6 @@
 - Azure’s version of AWS Fargate.
 
 ## Azure Functions
-
 ^ed9e52
 
 - Azure’s version of AWS Lambda.
