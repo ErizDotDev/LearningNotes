@@ -8,6 +8,23 @@
 az login
 ```
 
+
+## CLI Packages and Extensions
+
+- To install a CLI extension
+	- In the example, change `containerapp` in any extensions that you wanted to be installed.
+
+```bash
+az extension add --name containerapp --upgrade
+```
+
+- To install a CLI package
+	- A CLI package is like a C# namespace/Nuget package name.
+
+```bash
+az provider register --namespace <namespace>
+```
+
 ## Resource management
 
 - Create a resource group
@@ -93,4 +110,28 @@ az container show \
 	--name <container_name> \
 	--query "{FQDN:ipaddress.fqdn,ProvisioningState:provisioningState}" \
 	--out table
+```
+
+## Azure Container Apps
+
+- To create a container app environment:
+
+```bash
+az containerapp env create \
+	--name <container_app_env_name> \
+	--resource-group <resource_group_name> \
+	--location <region>
+```
+
+- To create a container app:
+
+```bash
+az containerapp create \
+	--name <container_app_name> \
+	--resource-group <resource_group_name> \
+	--environment <container_app_env_name> \
+	--image <image_url> \
+	--target-port <exposed_port> \
+	--ingress 'external' \ # internal or external
+	--query properties.configuration.ingress.fqdn
 ```
