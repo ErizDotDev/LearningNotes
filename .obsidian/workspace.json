@@ -24,15 +24,12 @@
             "id": "afaee6c589e8f8c1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dotnet-core-development/csharp/getting-started/introduction.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/base-types.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,7 +152,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a07011f77930c39",
+  "active": "afaee6c589e8f8c1",
   "lastOpenFiles": [
     "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
