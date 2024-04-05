@@ -162,6 +162,10 @@
   "lastOpenFiles": [
     "azure/commands.md",
     "azure/204/containers.md",
+    "azure/204/app-service.md",
+    "azure/204/app-functions.md",
+    "azure/fundamentals/identity-access-security.md",
+    "azure/azure-index.md",
     "dotnet-core-development/libs/polly.md",
     "dotnet-core-development/libs",
     "dotnet-core-development/dotnet/concepts/assemblies/strong-named-assemblies.md",
@@ -188,12 +192,8 @@
     "dotnet-core-development/csharp/misc/linq.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/misc/linq",
-    "dotnet-core-development/csharp/misc/indices-ranges.md",
-    "dotnet-core-development/csharp/misc/async-programming.md",
     "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/misc",
-    "dotnet-core-development/csharp/advanced/reflection-attributes.md",
-    "dotnet-core-development/csharp/advanced/expression-trees.md",
     "dotnet-core-development/csharp/advanced",
     "database",
     "Untitled.canvas"
