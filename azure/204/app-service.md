@@ -155,7 +155,7 @@ az webapp list-runtimes --os-type linux
 - The module runs independently from your app code and can be configured using a config file or via Azure Resource Manager settings.
 - No other configuration in the application is needed.
 - In Linux, the module is run in a separate container which achieves a similar effect as that to Windows OS variant.
-- Performs the following:
+- Performs the following: ^c584a1
     - Manages authenticated sessions
     - Validate, generate and refresh OAuth tokens
     - Authenticates users with available identity providers

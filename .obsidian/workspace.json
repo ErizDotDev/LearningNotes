@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0e2180b471d06c02",
+        "id": "52322b923361061c",
         "type": "tabs",
         "children": [
           {
-            "id": "0e0989fb4dafbae7",
+            "id": "b4fb726d43b02e65",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "azure/204/containers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83f9035878668b50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "azure/commands.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -61,7 +45,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"Azure Monitor\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "azure/204/containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "azure/204/containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "azure/204/containers.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,10 +139,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e0989fb4dafbae7",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
+    "azure/204/application-insights.md",
+    "dotnet-core-development/csharp/misc/linq/query-expression.md",
+    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
+    "dotnet-core-development/csharp/misc/linq/introduction.md",
+    "azure/fundamentals/monitoring-tools.md",
     "azure/commands.md",
+    "azure/azure-index.md",
     "azure/204/containers.md",
+    "azure/204/app-service.md",
+    "azure/204/app-functions.md",
+    "azure/fundamentals/identity-access-security.md",
     "dotnet-core-development/libs/polly.md",
     "dotnet-core-development/libs",
     "dotnet-core-development/dotnet/concepts/assemblies/strong-named-assemblies.md",
@@ -180,21 +169,12 @@
     "dotnet-core-development/csharp/misc/linq/type-relationships.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/misc/linq/runtime-query.md",
-    "dotnet-core-development/csharp/misc/linq/introduction.md",
-    "dotnet-core-development/csharp/misc/linq/query-expression.md",
     "dotnet-core-development/csharp/misc/linq/join-operations.md",
-    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "dotnet-core-development/csharp/misc/linq/inner-joins.md",
     "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
-    "dotnet-core-development/csharp/misc/linq.md",
-    "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/misc/linq",
-    "dotnet-core-development/csharp/misc/indices-ranges.md",
-    "dotnet-core-development/csharp/misc/async-programming.md",
     "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/misc",
-    "dotnet-core-development/csharp/advanced/reflection-attributes.md",
-    "dotnet-core-development/csharp/advanced/expression-trees.md",
     "dotnet-core-development/csharp/advanced",
     "database",
     "Untitled.canvas"

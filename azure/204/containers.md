@@ -18,7 +18,10 @@
 	[[containers#Microservices and Dapr|Microservices and Dapr]]
 	[[containers#Multiple containers setup|Multiple containers setup]]
 	[[containers#Limitations|Limitations]]
-	
+	[[containers#Authentication and Authorization|Authentication and Authorization]]
+	[[containers#Managing revisions and secrets|Managing revisions and secrets]]
+	[[containers#Dapr|Dapr]]
+
 ## Azure Container Registry
 
 - A private Docker registry service that is based on the open-source Docker Registry 2.0.
@@ -310,11 +313,68 @@ az container create \
 - Azure Container Apps cannot run applications that run processes that require root access.
 - Only Linux images are allowed for use.
 
+### Authentication and Authorization
 
+- Container Apps have a built in authorization and authentication flow to secure your publicly accessible, external ingress enabled applications with little to no code required.
+	- Feature is only available for HTTPS.
+	- `allowInsecure` property in your ingress configuration should be disabled.
 
+- Your Container Apps application can restrict access only to authenticated users or allow unauthenticated access to anyone using you application.
 
+- The authentication and authorization component is a middleware application that sits sidecar (sidebar container) on your application.
+	- Every incoming HTTP request goes through the security middleware first before being handled by the application.
 
+- Have similar [[app-service#^c584a1|authentication features]] and [[app-service#Auth flow|auth flow]] as App Service.
+- The authentication and authorization module is found on a separate container different from where your application is hosted.
 
+### Managing revisions and secrets
 
+- Revisions are immutable container app versions.
+	- They are created when the application is updated with "revision scope changes".
+	- Used for releasing a new version of your app or rolling back to a previous version of your application quickly.
 
+- You can set which revisions are active, and the traffic that will go through each active revision.
 
+- A revision name can be used to identify a revision and specifying it is as simple as updating the revision suffix.
+	- If a container app has a name of `album-api`, a suffix, in this case `v1` can be added to specify a revision.
+		- Now the revision name becomes `album-api--v1` which specifies that this is the first version of the container app.
+	- The suffix can be specified in the ARM template or when creating the container app via the CLI.
+
+- To list revisions of a container app: ^393094
+
+```bash
+az containerapp revision list \
+	--name <container_app_name> \
+	--resource-group <resource_group_name> \
+	-o table
+```
+
+- Azure Container Apps also protects sensitive information that powers your application, its secrets.
+	- Secrets are available to an application, regardless of what revision it's in.
+	- Adding removing or changing secrets will not generate a new revision.
+	- An application can reference one or more secrets
+	- Multiple applications can reference the same secret.
+
+- To register a new secret or updates to your secret, do the following:
+	- Deploy a new revision
+	- Restart an existing revision.
+
+- Before deleting a secret, make sure to deploy a revision that does not reference the old secret, then deactivate all revisions that uses the old secret.
+
+- Secrets can be referenced as an environment variable in a revision once registered.
+	- Secret name is used when referencing a secret in an environment variable.
+		- To use a secret in an environment variable in the configuration, set its value using `[[commands|secretref:]]`
+
+### Dapr
+
+**How it works?**
+- Dapr is enabled by setting up the container app configuration to enable Dapr and providing the requisite properties and values.
+	- The configuration will be applied to all container app revisions running individually or all at the same time.
+- The Dapr APIs are available for query via HTTP (port 3500) or gRPC (port 50001) as they are integrated in your application as sidebar containers.
+- Dapr setup will require your app's functionalities to be configured in a component like structure.
+	- These components/functionalities will be available for all container apps deployed, single or multiple.
+	- Components are treated as dependencies where only the required components specified in a scopes array will be loaded in runtime.
+		- Dependencies can be loaded for various applications/services or can be setup so that they can only be used by a specific application/service.
+
+- Dapr is configured for enablement via CLI, ARM templates, Bicep and the Azure portal.
+- Dapr secrets can be utilized to securely fetch configuration metadata.

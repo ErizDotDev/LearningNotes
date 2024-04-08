@@ -124,6 +124,8 @@ az containerapp env create \
 ```
 
 - To create a container app:
+	- Secrets can be provided during this operation following the `key=value` format.
+	- Environment variables can also be set here
 
 ```bash
 az containerapp create \
@@ -134,4 +136,17 @@ az containerapp create \
 	--target-port <exposed_port> \
 	--ingress 'external' \ # internal or external
 	--query properties.configuration.ingress.fqdn
+	--secrets "key=value" \ #optional
+	--env-vars "ConnectionString=secretref:<secret_name>" #optional
 ```
+
+- To update a container app:
+
+```bash
+az containerapp update \
+	--name <container_app_name> \
+	--resource-group <resource_group_name> \
+	--image <image_url>
+```
+
+- [[containers#^393094|To list a container app's revision list.]]
