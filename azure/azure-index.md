@@ -21,6 +21,7 @@
 [[azure/204/app-service|☮ App Service]]
 [[azure/204/blob-storage|☮ Blob Storage]]
 [[azure/204/containers|☮ Azure Container services]]
+[[azure/204/application-insights|☮ Application Insights]]
 
 ## Miscellaneous
 ---

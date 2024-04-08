@@ -18,7 +18,10 @@
 	[[containers#Microservices and Dapr|Microservices and Dapr]]
 	[[containers#Multiple containers setup|Multiple containers setup]]
 	[[containers#Limitations|Limitations]]
-	
+	[[containers#Authentication and Authorization|Authentication and Authorization]]
+	[[containers#Managing revisions and secrets|Managing revisions and secrets]]
+	[[containers#Dapr|Dapr]]
+
 ## Azure Container Registry
 
 - A private Docker registry service that is based on the open-source Docker Registry 2.0.
