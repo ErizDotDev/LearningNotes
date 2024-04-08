@@ -4,19 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "52322b923361061c",
+        "id": "47aef6642a6cfa02",
         "type": "tabs",
         "children": [
           {
-            "id": "b4fb726d43b02e65",
+            "id": "e58353351282eafd",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -45,9 +44,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"Azure Monitor\"",
+                "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -139,44 +138,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "546505948e47eaa3",
+  "active": "e58353351282eafd",
   "lastOpenFiles": [
+    "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet/fundamental-components/events.md",
+    "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
+    "dotnet-core-development/csharp/misc/async-programming.md",
+    "dotnet-core-development/csharp/concepts/events.md",
+    "dotnet-core-development/dotnet/fundamental-components/enums.md",
+    "dotnet-core-development/dotnet/fundamental-components/collections-ds.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
+    "dotnet-core-development/csharp/concepts/generics.md",
     "azure/204/application-insights.md",
-    "dotnet-core-development/csharp/misc/linq/query-expression.md",
-    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
-    "dotnet-core-development/csharp/misc/linq/introduction.md",
-    "azure/fundamentals/monitoring-tools.md",
-    "azure/commands.md",
-    "azure/azure-index.md",
-    "azure/204/containers.md",
-    "azure/204/app-service.md",
-    "azure/204/app-functions.md",
-    "azure/fundamentals/identity-access-security.md",
-    "dotnet-core-development/libs/polly.md",
-    "dotnet-core-development/libs",
+    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/dotnet/concepts/miscellaneous.md",
+    "dotnet-core-development/dotnet/concepts/assemblies.md",
+    "dotnet-core-development/dotnet/concepts/overview.md",
+    "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies/strong-named-assemblies.md",
     "dotnet-core-development/dotnet/concepts/assemblies/reference-assemblies.md",
-    "dotnet-core-development/dotnet/concepts/miscellaneous.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
-    "dotnet-core-development/dotnet/concepts/overview.md",
-    "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/dotnet/concepts/assemblies",
-    "dotnet-core-development/dotnet/fundamental-components",
-    "dotnet-core-development/dotnet/dotnet.md",
+    "Assembly.md",
+    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/dotnet/concepts",
+    "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/dotnet",
-    "dotnet-core-development/csharp/programming-concepts/strings.md",
-    "dotnet-core-development/csharp/misc/linq/type-relationships.md",
-    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
-    "dotnet-core-development/csharp/misc/linq/runtime-query.md",
-    "dotnet-core-development/csharp/misc/linq/join-operations.md",
-    "dotnet-core-development/csharp/misc/linq/inner-joins.md",
-    "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
-    "dotnet-core-development/csharp/misc/linq",
+    "dotnet-core-development/dotnet.md",
+    "dotnet-core-development/libs/polly.md",
+    "database/sql-server.md",
+    "dotnet-core-development/libs",
+    "database",
     "dotnet-core-development/csharp/misc/async-programming",
+    "dotnet-core-development/csharp/misc/miscellaneous.md",
+    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
+    "dotnet-core-development/csharp/misc/linq",
     "dotnet-core-development/csharp/misc",
     "dotnet-core-development/csharp/advanced",
-    "database",
     "Untitled.canvas"
   ]
 }

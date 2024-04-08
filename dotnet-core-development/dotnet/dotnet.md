@@ -16,7 +16,7 @@
 [[dotnet-core-development/dotnet/fundamental-components/collections-ds|⭐ Collections and data structures]]
 [[dotnet-core-development/dotnet/fundamental-components/enums|🚨 Enumerations]]
 [[dotnet-core-development/dotnet/fundamental-components/events|⭐ Events]]
-[[dotnet-core-development/dotnet/fundamental-components/base-types|⭐ Exceptions]]
+[[dotnet-core-development/dotnet/fundamental-components/exceptions|⭐ Exceptions]]
 
 ### To-Dos
 ---
