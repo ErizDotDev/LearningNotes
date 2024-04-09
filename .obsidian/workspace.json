@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "efd5b612428481ac",
+        "id": "c28a6f72e6d1c076",
         "type": "tabs",
         "children": [
           {
-            "id": "790ea225a086896f",
+            "id": "501e34e78b168b90",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,8 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "790ea225a086896f",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
+    "azure/204/application-insights.md",
+    "azure/azure-index.md",
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
@@ -152,7 +154,6 @@
     "dotnet-core-development/dotnet/fundamental-components/collections-ds.md",
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/csharp/concepts/generics.md",
-    "azure/204/application-insights.md",
     "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/dotnet/concepts/miscellaneous.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
@@ -172,7 +173,6 @@
     "dotnet-core-development/libs",
     "database",
     "dotnet-core-development/csharp/misc/async-programming",
-    "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/misc/linq",
     "dotnet-core-development/csharp/misc",
     "dotnet-core-development/csharp/advanced",

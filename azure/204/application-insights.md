@@ -93,4 +93,62 @@
 	- This format gives a significant boost in query performance which leads to more robust features like near real-time alerting, responsive dashboards, etc.
 
 - NOTE: The endpoint that collects the events and the logs will pre-aggregate these data first before ingestion sampling, one of the log data volume reduction techniques.
-	- This means that ingestion sampling does not affect the accuracy of the metrics collected on the pre-aggregates, regardless of the SDK version used.[w]()
+	- This means that ingestion sampling does not affect the accuracy of the metrics collected on the pre-aggregates, regardless of the SDK version used.
+
+### App instrumentation for monitoring
+
+- Instrumentation refers to use of measuring instruments to measure and quantify specific metrics and statistics.
+
+- Auto-instrumentation is the default and preferred way of attaching measuring devices to applications where source code is not available.
+	- No need to think about SDK updates and code changes.
+	- To enable, just configure the agent to automatically collect telemetry data 
+
+- The SDK should only be used when:
+	- Introducing custom events and metrics
+	- Requiring complete control of the telemetry data flow
+	- Auto-instrumentation is not available because of language or platform limitations.
+- It is not required to have the app and its components deployed in Azure.
+	- The application with the SDK installed can connect to Application Insights using a token.
+
+- The SDK, on available languages, support distributed tracing.
+	- Distributed tracing is a technique that checks the flow of the request through various services and components of a distributed system.
+		- This allows for the analyzation of how services interact with one another in a distributed architecture.
+
+- Can integrate with OpenCensus, which is an open-source set of library used to provide metric collection and distributed tracing capabilities.
+	- Allows for easy integration with Redis, MongoDB, Memcached through open source contributions.
+
+### Availability Test
+
+- Used to check your application's responsiveness and availability after its deployment.
+- Availability tests are available for use on any HTTP or HTTPS endpoints whether its your own application or not.
+	- Used for testing endpoints that your services rely on.
+
+- Can create up to 100 availability tests per Application Insights resource.
+
+- Types of availability tests:
+	- **URL Ping test**
+		- Can set various success criteria with advanced features like:
+			- Requests parsing
+			- Allowing for retries
+		- Relies on public DNS infrastructure to resolve domain names.
+			- If application is using private DNS, ensure that it can resolve public DNS names in your test.
+			- If not possible, use `TrackAvailability` tests instead.
+
+	- **Standard test**
+		- Tests include SSL validity, lifetime checks which are done without manual intervention, HTTP request verb, custom headers and custom data associated with an HTTP request.
+
+	- Custom `TrackAvailability()` tests (via SDK) where data collected is sent to Application Insights
+	- **Multi-step test**
+		- This test is only available on VS 2019.
+		- `TrackAvailability()` tests are the most widely used option for multi request and authentication scenarios.
+
+### Application Map
+
+- Gives a visual representation of your system and its components where you can check for any performance bottlenecks or spots where failures most likely happens.
+	- Each component will represent a node in the map and each node can provide further information about its health, performance and alert metrics which includes Application Insights events.
+		- Components may be set up such that it has a different instrumentation key or registered in  different Application Insights resource but they will still appear in the map as part of the system's components.
+
+- The application map generates the visual guide by following HTTP calls made between servers and resources where Application Insights is installed.
+	- This operation may take some time depending on the complexity of the application.
+		- This operation won't take long if components are registered in the same Application Insights resource.
+
