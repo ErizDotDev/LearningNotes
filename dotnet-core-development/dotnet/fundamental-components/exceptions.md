@@ -153,3 +153,48 @@
 
 - This exception will not be handled by .NET runtime if the exception occurs outside of the memory reserved by the runtime.
 - To resolve this, just add the attribute `HandleProcessCorruptedStateExceptionsAttribute` to the method that encountered this exception.
+
+---
+
+## `InvalidCastException`
+
+- .NET supports automatic conversion <u>from derived type to base type then back to derived type</u> as well as from <u>interface types to interface objects then back</u>.
+- [[base-types#Type Conversion|See other conversion types here.]]
+- `InvalidCastException` is thrown when the conversion of an instance of one type to another type is not supported.
+	- Mostly caused by developer error.
+	- Should not be handled in a `try/catch` block.
+
+- Different from `OverflowException` where the conversion is supported but the value of the source type, a `long` type, is outside the range of the target type, a `byte` type.
+
+- The following conversion methods will throw an `InvalidCastException`.
+	- When the `Convert.ChangeType` method is called but one or both of the types involved in the conversion does not implement the [[base-types#`IConvertible` interface|IConvertible]] interface.
+	- Unsupported [[base-types#^6a8a39|explicit conversions]].
+	- [[fundamentals#^332b21|Downcasting]]
+	- Attempting to convert an interface object (`IFormatProvider`) to a type (`DateTimeFormatInfo`) that implements the interface but the target type is not the same type or a base class type of the source type (`CultureInfo`) from which the interface object was derived.
+	- Converting a type to `string` using casting.
+		- Use `ToString()` instead.
+
+---
+
+## `InvalidOperationException`
+
+- This exception is thrown when there is a failure to call a method for reasons other than invalid arguments.
+- Usually, the exception is thrown because the state of an object does not support a method call.
+- The following are common causes why this exception is thrown.
+
+**Updating a UI thread from a non-UI thread**
+- .NET GUI application frameworks only allows access to GUI objects on the main and UI threads.
+- A simple example of this is calling an asynchronous function in an element event method call such as a button click.
+	- Running an asynchronous task will open up a new thread that is not a main thread and if a UI object is accessed in this newly opened thread, which is also not a UI thread, the exception will be thrown.
+
+- Resolving this will require using a framework's property that can check if the UI element operation is being executed in the UI thread.
+	- For WPF, the method to call is `Dispatcher.CheckAccess()`.
+	- For Windows Forms, it's `Control.InvokeRequired()`.
+
+- If the current thread is not the UI thread, then a call to a framework's specific method will need to be made in order to direct the operation back to the main thread/UI thread.
+	- For WPF, it's `Dispatcher.Invoke()`.
+	- For Windows Forms, it's `Control.Invoke()`.
+
+**Contents of a collection are being modified after an enumerator has been created**
+- If collection elements must be altered while iterating through the collection, use a regular for loop.
+- If the previous point does not apply, then use a temporary collection that will hold the values of the modified elements.

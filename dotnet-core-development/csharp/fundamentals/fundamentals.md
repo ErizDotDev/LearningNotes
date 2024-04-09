@@ -31,8 +31,7 @@
     
 - For reference types, casting a derived class to base class is fine, called “*upcasting*”.
     
-- However, casting a base class to derived class, known as “*downcasting*”, can be tricky:
-    
+- However, casting a base class to derived class, known as “*downcasting*”, can be tricky: ^332b21
     - Properties of the derived class may not be available in base class, and properties in the base class may not exist in the derived class, and casting between the two will cause an issue where values get lost.
     - In order to downcast successfully, the runtime type of the object to be casted should be the derived class.
 

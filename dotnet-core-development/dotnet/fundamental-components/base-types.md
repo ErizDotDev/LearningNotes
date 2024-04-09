@@ -81,7 +81,7 @@
 ## Type Conversion
 
 - **Implicit conversion**
-    - “Widening” conversion
+    - “Widening” conversion ^6a8a39
     - No loss of data but can have loss of precision
 
 - **Explicit conversion** - “Narrowing” conversion
@@ -95,6 +95,12 @@
         - Checked explicit conversion returns an `OverflowException` if the value goes over the range of the acceptable values for that type.
         - Unchecked explicit conversion does not return an exception, though this may result in an undefined or incorrect value.
             - This is the default option in C#.
+
+	- To perform a successful explicit conversion:
+		- The source value must be `null`.
+		- The source object type can be converted to the destination type even via implicit conversion.
+			- Base/derived type conversion
+			- Interface type conversion
 
 ### `IConvertible` interface
 

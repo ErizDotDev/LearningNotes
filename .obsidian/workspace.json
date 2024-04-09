@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "47aef6642a6cfa02",
+        "id": "efd5b612428481ac",
         "type": "tabs",
         "children": [
           {
-            "id": "e58353351282eafd",
+            "id": "790ea225a086896f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,9 +138,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e58353351282eafd",
+  "active": "790ea225a086896f",
   "lastOpenFiles": [
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet/fundamental-components/events.md",
     "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
@@ -148,7 +150,6 @@
     "dotnet-core-development/csharp/concepts/events.md",
     "dotnet-core-development/dotnet/fundamental-components/enums.md",
     "dotnet-core-development/dotnet/fundamental-components/collections-ds.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/csharp/concepts/generics.md",
     "azure/204/application-insights.md",
@@ -172,7 +173,6 @@
     "database",
     "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
-    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/misc/linq",
     "dotnet-core-development/csharp/misc",
     "dotnet-core-development/csharp/advanced",
