@@ -230,3 +230,29 @@
 - Consider using the `First` or `Where` LINQ methods.
 
 **Accessing a field from a remote domain**
+
+---
+
+## `NotImplementedException`
+
+- Only use it on methods and accessors when they are still in development.
+- Removing the property or method call is the only thing that can resolve this exception.
+- You may also choose to throw these exceptions related to `NotImplementedException`
+	- `PlatformNotSupportedException`
+	- `NotSupportedException` ^572787
+		- An example of where this exception is useful is when implementing a `DateTime.Convert()` to int which is not programmatically possible but the Convert method should exist as it needs to implement the `IConvertible` interface.
+
+---
+
+## `NotSupportedException`
+
+- [[dotnet-core-development/dotnet/fundamental-components/exceptions#^572787|Initial information]]
+
+- Throw this exception when:
+	- Implementing an interface and an implementation of a method does not make sense.
+		- Example: Creating a date and time type that implements the `IConvertible` interface and discovering that most of the conversion operations are invalid.
+
+	- Inheriting from an abstract base class and requiring you to override some methods but can only do so for a couple of said methods, not all.
+
+	- Defining a type where its internal processing can be dictated by the type's state and the scenarios it leads to is impossible in the most common of senses.
+		- Example: The type can only be either read-only or read-write, and if the state of the type is read-only and an operation requires an assignment of a value to this type that is in read-only state.

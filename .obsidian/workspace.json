@@ -11,8 +11,12 @@
             "id": "0eaed6e65a9f5640",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md"
+              }
             }
           }
         ]
@@ -140,10 +148,12 @@
   },
   "active": "0eaed6e65a9f5640",
   "lastOpenFiles": [
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet-core-development-index.md",
+    "roadmaps.md",
     "azure/204/api-management.md",
     "dotnet-core-development/libs/polly.md",
     "azure/azure-index.md",
-    "dotnet-core-development/dotnet-core-development-index.md",
     "Untitled.md",
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
@@ -153,7 +163,6 @@
     "dotnet-core-development/csharp/misc/linq/type-relationships.md",
     "dotnet-core-development/csharp/misc/linq/query-expression.md",
     "dotnet-core-development/csharp/misc/linq/introduction.md",
-    "dotnet-core-development/dotnet/dotnet.md",
     "azure/204/application-insights.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
@@ -165,7 +174,6 @@
     "dotnet-core-development/dotnet/fundamental-components/collections-ds.md",
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/csharp/concepts/generics.md",
-    "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
     "dotnet-core-development/dotnet/concepts",
