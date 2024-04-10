@@ -220,4 +220,13 @@
 		- `GetValueOrDefault()` to provide a default value to an element with a null value.
 
 **Calling a LINQ [[standard-query-operators#Aggregation Options|aggregating methods]] on an empty collection**
+- When assuming a collection is not empty, handling the exception in a try/catch block is fine.
+- Use any overloads of the `Enumerable.Any` to check if a collection/sequence has any elements before doing any operations.
+- Use the methods with default value fetching when available.
+	- Example: `First` -> `FirstOrDefault`, `Single` -> `SingleOrDefault`
 
+**Calling `Enumerable.Single` or `Enumerable.SingleOrDefault` on a sequence with more than one element.**
+- Use the method that returns the default value when a collection contains no elements.
+- Consider using the `First` or `Where` LINQ methods.
+
+**Accessing a field from a remote domain**
