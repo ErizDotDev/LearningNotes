@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "639ae46bd812f54f",
+        "id": "f47d2948c09ffc50",
         "type": "tabs",
         "children": [
           {
-            "id": "0eaed6e65a9f5640",
+            "id": "cf0c24d2b5293301",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/exceptions.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0eaed6e65a9f5640",
+  "active": "cf0c24d2b5293301",
   "lastOpenFiles": [
+    "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet-core-development-index.md",
     "roadmaps.md",
@@ -155,7 +148,6 @@
     "dotnet-core-development/libs/polly.md",
     "azure/azure-index.md",
     "Untitled.md",
-    "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "azure/204/containers.md",
