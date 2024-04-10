@@ -198,3 +198,26 @@
 **Contents of a collection are being modified after an enumerator has been created**
 - If collection elements must be altered while iterating through the collection, use a regular for loop.
 - If the previous point does not apply, then use a temporary collection that will hold the values of the modified elements.
+
+**Trying to sort a collection whose underlying type is not configured to be compared**
+- The `Sort` methods from generic and non-generic collection types require that at least one of the objects that will be sorted implements a `IComparable` or `IComparable<T>` interface.
+	- Not doing so will throw the exception.
+
+- To resolve this:
+	- Implement the `IComparable` interfaces if the source code is available for editing.
+
+	- If the source code can't be modified, implement an overload of `Sort` by implementing a class that implements the `IComparer` interface.
+		- The method inside this class will be passed as an argument to the `Sort` method.
+
+	- Create a delegate that matches the `Comparison<T>` delegate signature which will be passed in the `Sort` method.
+		- This is an alternative to the second point.
+
+**Casting a `Nullable<T>` with a null value to its underlying type `T`**
+- Example: When you define a nullable int collection with one null value, and then enumerating through each element using a `Select` statement and then casting it as a normal integer value.
+- To prevent this exception:
+	- Use the properties and methods available in a nullable type.
+		- `HasValue` to check if a nullable type contains a value before replacing it with a different value that is not null.
+		- `GetValueOrDefault()` to provide a default value to an element with a null value.
+
+**Calling a LINQ [[standard-query-operators#Aggregation Options|aggregating methods]] on an empty collection**
+

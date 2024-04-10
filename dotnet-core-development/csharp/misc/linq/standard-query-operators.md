@@ -111,6 +111,10 @@
 ## Aggregation Options
 
 - Contains operators that do certain calculations on the sequences and collections to derive a single value result.
+- Example:
+	- `Average`
+	- `Last`
+	- `Max`
 
 ## Join Operations
 
