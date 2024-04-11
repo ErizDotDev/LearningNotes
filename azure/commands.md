@@ -150,3 +150,7 @@ az containerapp update \
 ```
 
 - [[containers#^393094|To list a container app's revision list.]]
+
+## API Management
+
+- [[api-management#^9bc789|To create an API management instance.]]

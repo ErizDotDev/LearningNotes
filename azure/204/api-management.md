@@ -51,6 +51,7 @@
 	- *Protected* products must be subscribed to first before they can be used.
 	- *Open* products are free of use even without a subscription.
 - Subscription approval can be configured at a product level and can either require an admin approval or set up for auto approval.
+- APIs can be a part of one or more products.
 
 ### Groups
 
@@ -162,3 +163,63 @@
 - Azure offers both managed and self-hosted gateways:
 	- **Managed** - Default option where all API traffic flows through Azure regardless of where the backend are hosted.
 	- **Self-hosted** - Used for hybrid or multi-cloud setups.
+
+## Securing APIs
+
+### Subscription Keys
+
+- Subscription keys are included in HTTP requests when submitting a request to the APIs.
+	- If not, the requests are rejected by the API Gateway.
+	- Can be included in the headers with header name `Ocp-Apim-Subscription-Key` or as query parameter with name `subscription-key`
+
+- Subscription keys need subscription and developers who would like to use the API must register for a subscription.
+	- Publishers do not need to approve when a user registers for a subscription.
+	- Publishers can generate the subscription themselves for the user at any time.
+
+- Subscriptions have different scopes.
+	- Can be scoped to all APIs accessible from the gateway. (**All APIs**)
+	- Can be scoped to only a single API and all its endpoints (**Single API**)
+	- Can be scoped to [[api-management#Products|Products]] which can contain one or more APIs.
+
+- If an API is protected, the subscription key is required in every request.
+- Subscription keys generate two keys making it simple for users if the primary key needs to be changed, the secondary key can be used instead.
+- Functions like a JWT token.
+
+### Certificates
+
+- Certificates are used to provide TLS (*Transport Layer Security*) authentication between client and API.
+
+- API gateway can be configured to only allow requests that contains certificates with a specific property.
+	- Properties that are checked include:
+		- Certificate Authority (CA)
+		- Thumbprint - A hash calculated from other certificate properties.
+		- Subject
+		- Expiration Date
+	- These properties can be mixed and matched with one another to create a distinct certificate profile for request validation.
+
+- Certificates are signed to ensure that they are not forged in any way.
+- Certificates are needed to be verified in the following ways to ensure that the certificate is signed by trusted authorities and not just by anyone:
+	- Check the certificate issuer and ensure that the certificate is signed by someone you trust.
+		- You can configure your trusted certificates to make the process easier for the succeeding request and certificate validations.
+	- Verify that the issuer is the one that signed the certificate.
+		- Also known as *self-signed certificates*.
+
+- If the APIs are built with serverless technologies like Azure Functions, you can enable the use of client certificates in the **Consumption tier**.
+- A policy needs to be created in order to validate the request with an attached certificate.
+	- You can set a condition where you validate the thumbprint from the API to a specific thumbprint value.
+	- For scenarios where companies provide multiple certificates with multiple different thumbprints, upload these certificates in Azure portal's **Client certificates** and write code that will validate the incoming certificate with all uploaded certificates.
+	- You can also check the certificate issuer and the certificate's subject.
+
+## Commands
+
+- To create an API management instance. ^9bc789
+
+```bash
+az apim create -n <api_name> \
+	--location <region> \
+	--publisher-email <publisher_email> \
+	--resource-group <resource_group_name> \
+	--publisher-name <publisher_name> \
+	--sku-name Consumption
+```
+
