@@ -247,6 +247,7 @@
 ## `NotSupportedException`
 
 - [[dotnet-core-development/dotnet/fundamental-components/exceptions#^572787|Initial information]]
+- This exception indicates that a method has no implementation and shouldn't be called.
 
 - Throw this exception when:
 	- Implementing an interface and an implementation of a method does not make sense.
@@ -256,3 +257,16 @@
 
 	- Defining a type where its internal processing can be dictated by the type's state and the scenarios it leads to is impossible in the most common of senses.
 		- Example: The type can only be either read-only or read-write, and if the state of the type is read-only and an operation requires an assignment of a value to this type that is in read-only state.
+
+- Only handle this exception when:
+	- Implementation does not and will not exist;
+		- To handle this case, just remove the member call.
+
+	- Invoking a member (method or property) is inconsistent with an object's purpose of state.
+		- If the state of an object is known in advance, one of the ways to handle it is to make sure that the object used to interact with the object's state will support the object in whatever state it is in.
+		- If the state of an object is unknown by the time it interacts with an object, make sure that the object has a property or method that gives information of whether a particular object state is allowed for a series of operations.
+
+---
+
+## `TypeInitializationException`
+
