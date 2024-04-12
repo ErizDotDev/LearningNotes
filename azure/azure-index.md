@@ -23,6 +23,7 @@
 [[azure/204/containers|☮ Azure Container services]]
 [[azure/204/application-insights|☮ Application Insights]]
 [[azure/204/api-management|☮️ API Management]]
+[[azure/204/cache|☮️ Azure Cache]]
 
 ## Miscellaneous
 ---

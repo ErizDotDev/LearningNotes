@@ -154,3 +154,17 @@ az containerapp update \
 ## API Management
 
 - [[api-management#^9bc789|To create an API management instance.]]
+
+## Azure Cache for Redis
+
+- [[cache#Common commands|Common commands]]
+
+- To create a Redis instance
+
+```bash
+az redis create --location <region> \
+	--resource-group <resource_group_name> \
+	--name <unique_redis_instance_name> \
+	--sku Basic
+	--vm-size c0
+```
