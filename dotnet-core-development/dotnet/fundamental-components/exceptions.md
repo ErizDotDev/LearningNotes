@@ -270,3 +270,18 @@
 
 ## `TypeInitializationException`
 
+- This exception is thrown as a result of application's failure to continue processing that is maybe due to changes in configuration files, dependencies or any alterations to the application's environment.
+- This exception contains additional information that may contain other exceptions that may have been thrown and their details can be found on the `InnerException` property.
+
+- The following scenarios can trigger this exception being thrown:
+	- When setting up a regex match time out value, if the value specified for the timeout does not meet the requirements, then it will thrown an `ArgumentOutOfRangeException` which is wrapped inside this exception.
+		- The criteria for setting up a regex match timeout value are that it should be a `TimeSpan` object which contains a value greater than 0 and less than 24 days.
+	- When a calendar is being initialized but the runtime could not instantiate the `CultureInfo` object.
+
+### Static constructors
+
+- The exception is usually thrown when a static constructor is unable to instantiate type because:
+	- There is unhandled exception in the static constructor.
+		- This is hard to debug because a static constructor is mostly not provided.
+			- A compiler creates the static constructor if it is not explicitly defined.
+	- Missing assembly or data file.

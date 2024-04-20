@@ -40,6 +40,9 @@ This means that it will call another constructor in Class1 that can match the pa
 - Does not take an access modifier.
 - There can only be one static constructor.
 - Invoked automatically by CLR.
+- One of its primary purpose is to initialize static fields defined in a class.
+	- It is a hidden implementation, meaning a class behind the scenes utilizes the static constructor to initialize the static fields defined in said class.
+
 - The following actions are executed when initializing a static class.
     - Static fields are set to 0.
     - Statis field initializers are run.

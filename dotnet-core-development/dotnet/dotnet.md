@@ -17,6 +17,7 @@
 [[dotnet-core-development/dotnet/fundamental-components/enums|🚨 Enumerations]]
 [[dotnet-core-development/dotnet/fundamental-components/events|⭐ Events]]
 [[dotnet-core-development/dotnet/fundamental-components/exceptions|⭐ Exceptions]]
+[[dotnet-core-development/dotnet/fundamental-components/numerics|🚨 Numeric types]]
 
 ### To-Dos
 ---
