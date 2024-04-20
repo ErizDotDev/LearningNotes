@@ -182,7 +182,7 @@
 	- Can be scoped to [[api-management#Products|Products]] which can contain one or more APIs.
 
 - If an API is protected, the subscription key is required in every request.
-- Subscription keys generate two keys making it simple for users if the primary key needs to be changed, the secondary key can be used instead.
+- Subscription keys generate two keys making it simple for users if the primary key needs to be changed, the secondary key can be used instead. ^881414
 - Functions like a JWT token.
 
 ### Certificates
