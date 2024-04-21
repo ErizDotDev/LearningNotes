@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/dotnet/dotnet.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/dotnet.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/dotnet.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/dotnet/dotnet.md"
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "e65d4b2599f6619e",
   "lastOpenFiles": [
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
-    "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/csharp/csharp.md",
     "azure/204/cdn.md",
     "Untitled 1.md",
@@ -173,7 +174,6 @@
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/dotnet/fundamental-components/events.md",
     "dotnet-core-development/csharp/misc/async-programming/how-async-await-works.md",
-    "dotnet-core-development/csharp/misc/async-programming.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
     "dotnet-core-development/dotnet/concepts",
