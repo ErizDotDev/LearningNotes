@@ -18,3 +18,10 @@
 	- Vectors
 	- Plane
 	- Quarternion
+
+### Booleans
+
+- When **converting** Boolean to integral values, <u>non-zero values convert to true</u> and <u>zero value converts to false</u>.
+- When **parsing** Boolean values, the only acceptable value that can be parsed are the words, "True", "False", "true", "false" or a <u>mixed case</u> equivalent.
+- Marshaling Boolean is a bit tricky compared to other base data types because it can be converted into three different integer value formats.
+	- Marshaling refers to the process of converting a type or an object into a different format so that it can communicate with other software components, which are may be written in a different language.

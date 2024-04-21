@@ -6,12 +6,11 @@
 - A framework that provides an approach to communication between a server client by utilizing **creation of remote objects** that each can access to gain methods or properties to be used by either the server or the client.
     
 - Sort of like REST API as they are used with distributed systems for communication.
-    
     - REST APIs uses text based protocols like JSON for communication while .NET Remoting uses binary communication protocol which are **more efficient** in terms of serialization and deserialization.
     - REST API is used more because it is simple, it is adopted by tons of applications and compatibility with various platforms.
+
 - Much like C# class libraries they allow sharing of code between different system components.
-    
-    - .NET remoting specializes in cross application communication.
+        - .NET remoting specializes in cross application communication.
         - Imagine having two applications, a payroll system and an HRIS system, in different codebases, but both use the .NET ecosystem. One application may be written in C#, one application may be written in F#.
         - .NET remoting can be used to share code between the two applications even though they are in different codebases.
     - Class libraries are used in more simple setups where the processes are still in scope of a single application.

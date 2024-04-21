@@ -28,3 +28,11 @@ Reference: [https://dotnettutorials.net/lesson/interlocked-vs-lock-in-csharp/](h
     - The synchronization token can be any object, but it should be the same object used across all threads.
     - The synchronization token will act as the lock, and it will only allow one thread to execute the statements inside the lock code block.
     - Other resources will need to wait for the statements inside the lock code block to be released by the executing thread.
+
+### Type Comparison
+
+- To compare types, the following methods are used.
+	- `<type> == typeof<anotherType>`
+		- Use this if you are looking to get the exact type match.
+	- `<type> is <anotherType>`
+		- Use this to check if a type inherited or is derived from another type.
