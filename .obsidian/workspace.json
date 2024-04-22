@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "263fd03e9563d74b",
+        "id": "952aff1053b4f8e2",
         "type": "tabs",
         "children": [
           {
-            "id": "e65d4b2599f6619e",
+            "id": "6acba0f69b473d7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/cdn.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/cdn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/cdn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md"
+                "file": "azure/204/cdn.md"
               }
             }
           }
@@ -146,13 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e65d4b2599f6619e",
+  "active": "6acba0f69b473d7b",
   "lastOpenFiles": [
+    "azure/commands.md",
+    "azure/204/cdn.md",
+    "azure/azure-index.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet/concepts/miscellaneous.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/csharp.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/polymorphism.md",
     "dotnet-core-development/csharp/programming-concepts/statements-expressions-equality.md",
@@ -160,11 +163,8 @@
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
-    "azure/204/cdn.md",
     "Untitled 1.md",
     "Untitled.md",
-    "azure/azure-index.md",
-    "azure/commands.md",
     "azure/204/cache.md",
     "azure/204/api-management.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",

@@ -168,3 +168,8 @@ az redis create --location <region> \
 	--sku Basic
 	--vm-size c0
 ```
+
+## Azure CDN
+
+- [[cdn#^3c9a7e|To purge cache associated to an endpoint]]
+- [[cdn#^44b11d|To pre-load assets associated to an endpoint]]
