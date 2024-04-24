@@ -16,6 +16,9 @@
 	- Example: A file upload event will give details about the file that was uploaded like its file size, and date last modified.
 - Only events with a size of 64KB is covered by SLA.
 	- Events exceeding 64KB are charged a fee per additional 64KB.
+- Headers can be added to an event, in case a subscription will require them.
+	- Can have up to 10 headers.
+	- Each header value should have a size of at most 4096 bytes.
 
 ### Event Source
 
@@ -89,3 +92,59 @@
 - Headers for both Event Grid schema and Cloud schema are the same except for the `content-type`
 	- For Event Grid, it's `application/json`
 	- For Cloud schema, it's `application/cloudevents+json`
+
+## Event delivery durability
+
+- Event Grid will attempt to delivery every event for each appropriate subscriptions immediately.
+	- If the subscriber's endpoint did not acknowledge its receipt of the event or if a failure occurred, Event Grid will try to redeliver the event based on a configured retry schedule and retry policy.
+
+- Event Grid has three options in case a failure happens:
+	- Retry delivery
+	- Place the event in the dead letter queue
+		- Dead letter queue is where all failed events or queue messages from being delivered are stored.  ^3af9b7
+	- Drop the event based on the error encountered.
+- The last two options are more probable when the subscriber's endpoint encountered a configuration error (example: the endpoint was deleted).
+	- If the following status codes are encountered, Event Grid will not retry delivering an event: 400, 413, 403
+	- If the error returned is not one of the stated status codes above, Event Grid will wait for 30 seconds before it attempts to redeliver the message.
+		- Event Grid uses exponential backoff retry policy, where the initial retry will be attempted after 30 seconds, the next retry after 90 seconds, the next after 270 seconds and so on.
+	- If the endpoint was able to respond within 3 minutes, Event Grid will try to remove the event from the retry queue and there are **no assurances** that a duplicate will not be created.
+- Events are dropped automatically if the previous point has been made AND sending an event to the dead letter queue is not configured for an endpoint.
+
+### Retry Policy
+
+- Uses the following settings for configuring retries.
+	- **Maximum number of retry attempts**
+		- Default is 30. 
+		- Can be any value between 1 and 30
+	- **Event TTL**
+		- Default is 1440 minutes.
+		- Can be any value between 1 and 1440.
+
+### Output batching
+
+- Batch events that are being delivered in order to improve performance.
+- This feature is turned off by default
+- Has two settings.
+	- **Max events per batch**
+		- Note that fewer events might be sent if there are no events available at the time the events are published.
+		- It will not wait for events to fill up the max amount before it is delivered.
+		- Value must be between 1 and 5000.
+	- **Preferred batch size in KB**
+		- A batch size can only exceed the set size if the size of a *single* event exceeds the max size allowed.
+
+### Delayed delivery
+
+- Event Grid can purposely delay the delivery and retry of events if the endpoint continuously suffers from failures.
+- The aim of this feature is to protect the endpoints and Event Grid.
+	- Continuously sending out events that will simply go back to the Event Grid because of failure can strain both the Event Grid and your local application.
+
+### Dead letter events
+
+- [[event-grid#^3af9b7|Initial information]]
+- Events are place in dead letter once it reaches the maximum number of retries or TTL of the event.
+- Turned off by default.
+	- To enable it, provide a storage account that will hold the dead letter events.
+	- This storage account is where the events will be pulled in case there will be an attempt to retry the event's delivery.
+- If the endpoint returned an error status code, Event Grid will immediately schedule an event for dead letter storing.
+	- There is a 5 minute delay in this operation.
+	- The event will be dropped if the storage account is not available within 4 hours.

@@ -173,3 +173,16 @@ az redis create --location <region> \
 
 - [[cdn#^3c9a7e|To purge cache associated to an endpoint]]
 - [[cdn#^44b11d|To pre-load assets associated to an endpoint]]
+
+## Azure Event Grid
+
+- To create an event grid subscription
+
+```bash
+az eventgrid event-subscription create \
+	-g <grid_resource_group> \
+	--topic-name <topic_name> \
+	--name <event_subscription_name> \
+	--endpoint <endpoint_url> \
+	--max-delivery-attempts <value>
+```
