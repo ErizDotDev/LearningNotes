@@ -148,3 +148,62 @@
 - If the endpoint returned an error status code, Event Grid will immediately schedule an event for dead letter storing.
 	- There is a 5 minute delay in this operation.
 	- The event will be dropped if the storage account is not available within 4 hours.
+
+## Event access control
+
+- Through RBAC, Event Grid can give different users different levels of accesses to perform different management operations to events such as checking available event subscriptions, creating new subscriptions, and generating keys.
+
+- Roles available:
+	- Event Grid Subscription Reader
+	- Event Grid Subscription Contributor
+	- These two roles are important in establishing event subscriptions as they are needed for sending out events and assigning them to topics.
+		- Before creating an event or a topic, a subscription is needed first.
+
+	- Other roles:
+		- Event Grid Contributor
+		- Event Grid Sender
+
+- Event Grid is not allowing just anyone to send events to a resource.
+	- The event source needs the `MicrosoftGrid/EventSubscriptions/Write` permission in order for a resource to have the ability to send events.
+		- If writing an event to a *system topic*, permission is applied at the scope of the resource that is publishing the event
+		- If writing an event to a *custom topic*, permission is applied at the scope of the event grid topic.
+
+## Receiving events via webhook
+
+- When an event is ready to be sent, Azure Grid will send the request to the provided webhook endpoint with the event in the request body.
+- Before Event Grid sends a request to the endpoint, you need to prove that you own the webhook endpoint
+
+- A special process is going to be executed if another endpoint type other than HTTP endpoints (like HTTP trigger based Azure Functions) and is highlighted by these three ways:
+	- **Synchronous handshake**
+		- When an event subscription is created, Event Grid will send out a subscription validation event to the endpoint.
+		- The schema of the event that was sent is similar to the schema that regular event uses.
+			- The only difference is the `data` property will contain a `validationCode` property.
+		- The client application that implements the webhook should be able to send a response with the send validation code in its body.
+	- **Asynchronous handshake**
+		- Characterized with the use of a third party service like *Zapier*.
+	- **Manual validation handshake**
+		- Similar in principle to the synchronous handshake
+		- An event will still be sent to the endpoint with an additional property found in the `data` property, the `validationUrl`.
+		- Locate the URL and do a GET request either in the terminal or in a web browser.
+		- The URL has a validity of only *5 minutes*.
+			- The starting status of the subscription while waiting for the validity check on the URL is `AwaitingManualAction`
+			- Once the 5 minutes is elapsed, the status will then be `Failed`.
+		- Still this requires the webhook endpoint to return a 200 response.
+			- Default action is still the automated synchronous handshake.
+			- If the webhook endpoint returned a 200 response but has no validation code provided, the process will then be converted to the manual.
+
+## Event filtering
+
+- Options for filtering
+	- Event types
+	- Subject begins with or ends with
+	- Advanced field operators
+
+### Advanced filtering
+
+- This works such that the following values are needed to be provided.
+	- `operatorType` - can be a string contains operation or a number is greater than or equal to operation.
+	- `key` - The property where the operation will be applied
+	- `value` 
+		- The value that will be compared to the key with the given operator type.
+		- Can be a single value or multiple values stored in an array.

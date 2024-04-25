@@ -25,6 +25,8 @@ az extension add --name containerapp --upgrade
 az provider register --namespace <namespace>
 ```
 
+^9b111b
+
 ## Resource management
 
 - Create a resource group
@@ -185,4 +187,40 @@ az eventgrid event-subscription create \
 	--name <event_subscription_name> \
 	--endpoint <endpoint_url> \
 	--max-delivery-attempts <value>
+```
+
+- To register an Event Grid resource provider
+	- Use this [[commands#^9b111b|command]] but change the namespace value to `Microsoft.EventGrid`
+
+- To check the status of the provider registration
+
+```bash
+az provider show --namespace Microsoft.EventGrid --query "registrationState"
+```
+
+- To create a custom topic
+
+```bash
+az eventgrid topic create \
+	--name <topic_name> \
+	--location <location> \
+	--resource-group <resource_group_name>
+```
+
+- To register the endpoint that will handle the event
+
+```bash
+az deployment group create \
+	--resource-group <resource_group_name>
+	--template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json"
+	--parameters siteName=<site_name> hostingPlanName=viewerhost
+```
+
+- To subscribe to a custom topic
+
+```bash
+az eventgrid event-subscription create \
+	--source-resource-id "/subscriptions/<subscription_id>/resourceGroups/az204-evgrid-rg/providers/Microsoft.EventGrid/topics/<topic_name>" \ #This is an example resource id
+	--name <topic_name> \
+	--endpoint <endpoint>
 ```
