@@ -26,6 +26,7 @@
 [[azure/204/cache|☮️ Azure Cache]]
 [[azure/204/cdn|☮️ Azure CDN]]
 [[azure/204/event-grid|☮️ Azure Event Grid]]
+[[azure/204/message-queues|☮️ Azure Message Queues]]
 
 ## Miscellaneous
 ---

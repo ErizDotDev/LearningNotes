@@ -11,8 +11,12 @@
             "id": "29914b0599a6dd47",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "azure/204/message-queues.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "azure/204/message-queues.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "azure/204/message-queues.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "azure/204/message-queues.md"
+              }
             }
           }
         ]
@@ -140,9 +149,12 @@
   },
   "active": "29914b0599a6dd47",
   "lastOpenFiles": [
+    "azure/fundamentals/identity-access-security.md",
+    "azure/204/message-queues.md",
+    "azure/204/blob-storage.md",
+    "azure/azure-index.md",
     "azure/commands.md",
     "azure/204/event-grid.md",
-    "azure/azure-index.md",
     "azure/204/cdn.md",
     "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
@@ -163,9 +175,6 @@
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "roadmaps.md",
     "dotnet-core-development/libs/polly.md",
-    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
-    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
-    "azure/204/containers.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
     "dotnet-core-development/dotnet/concepts",
