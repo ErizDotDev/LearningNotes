@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "263fd03e9563d74b",
+        "id": "893b1b66f2064e01",
         "type": "tabs",
         "children": [
           {
-            "id": "e65d4b2599f6619e",
+            "id": "a45f3fd1b4bfe3d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,14 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e65d4b2599f6619e",
+  "active": "a45f3fd1b4bfe3d3",
   "lastOpenFiles": [
     "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet-core-development-index.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/concepts/miscellaneous.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/csharp.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
-    "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/polymorphism.md",
     "dotnet-core-development/csharp/programming-concepts/statements-expressions-equality.md",
     "dotnet-core-development/csharp/fundamentals/functional-techniques.md",

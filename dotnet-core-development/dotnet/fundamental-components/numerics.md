@@ -44,3 +44,22 @@
 	- The number of leading zeroes depend on the integer value specified along with the D specifier.
 - Use the **X** format to specify a byte as a hexadecimal string.
 - Use the `ToString` method overload that accepts two method parameters with the final parameter being the value that tells whether a byte shall be converted to decimal, binary, octal or hexadecimal.
+
+## Decimals
+
+- Can hold more whole numbers (numbers at the left of the decimal point) and decimal numbers (numbers at the right of the decimal point) than `float` and `double`.
+- This makes it perfect to be used for financial calculation where extreme precision without rounding off is necessary.
+
+- **Behind the scenes**
+	- The decimal type is a 128-bit value comprised of two parts:
+		- 96-bit for the integer
+		- 32-bit for the sign (positive or negative) and the scaling factor
+			- The ***scaling factor*** indicates the position of the decimal point.
+				- Also preserves the leading zeroes of the decimal which can be displayed by using the appropriate format string.
+
+- **Conversions**
+	- Decimals can be converted to `char`.
+	- Decimals can also be converted to `Single` and `Double` types.
+		- This is a narrowing conversion as `Single` and `Double` have lesser bit values compared to decimal.
+		- Some decimal numbers may be lost as a result of the conversion.
+	- Conversions that fail to express to a valid resulting value either as a decimal or other type will return an exception, one of which is `OverflowException`.
