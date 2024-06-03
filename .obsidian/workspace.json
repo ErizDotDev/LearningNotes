@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/message-queues.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/message-queues.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+                "file": "azure/204/message-queues.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md"
+                "file": "azure/204/message-queues.md"
               }
             }
           }
@@ -148,6 +149,14 @@
   },
   "active": "a45f3fd1b4bfe3d3",
   "lastOpenFiles": [
+    "azure/fundamentals/identity-access-security.md",
+    "azure/204/message-queues.md",
+    "azure/204/blob-storage.md",
+    "azure/azure-index.md",
+    "azure/commands.md",
+    "azure/204/event-grid.md",
+    "azure/204/cdn.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/dotnet/fundamental-components/numerics.md",
@@ -160,20 +169,13 @@
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/dotnet/fundamental-components/exceptions.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
-    "azure/204/cdn.md",
     "Untitled 1.md",
     "Untitled.md",
-    "azure/azure-index.md",
-    "azure/commands.md",
     "azure/204/cache.md",
     "azure/204/api-management.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "roadmaps.md",
     "dotnet-core-development/libs/polly.md",
-    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
-    "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
-    "azure/204/containers.md",
-    "dotnet-core-development/csharp/misc/linq.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
     "dotnet-core-development/dotnet/concepts",
