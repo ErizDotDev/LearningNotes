@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "893b1b66f2064e01",
+        "id": "1a1b5b677d30513b",
         "type": "tabs",
         "children": [
           {
-            "id": "a45f3fd1b4bfe3d3",
+            "id": "e5929bb17e6f2645",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "azure/204/message-queues.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "azure/204/message-queues.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "azure/204/message-queues.md",
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "azure/204/message-queues.md"
+                "file": "dotnet-core-development/dotnet/fundamental-components/numerics.md"
               }
             }
           }
@@ -147,19 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a45f3fd1b4bfe3d3",
+  "active": "e5929bb17e6f2645",
   "lastOpenFiles": [
-    "azure/fundamentals/identity-access-security.md",
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "azure/204/message-queues.md",
+    "azure/fundamentals/identity-access-security.md",
     "azure/204/blob-storage.md",
     "azure/azure-index.md",
     "azure/commands.md",
     "azure/204/event-grid.md",
     "azure/204/cdn.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
-    "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/dotnet-core-development-index.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/concepts/miscellaneous.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/csharp.md",
@@ -175,7 +173,6 @@
     "azure/204/api-management.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "roadmaps.md",
-    "dotnet-core-development/libs/polly.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
     "dotnet-core-development/dotnet/concepts",

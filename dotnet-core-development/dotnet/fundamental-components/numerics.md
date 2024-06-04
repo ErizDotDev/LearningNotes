@@ -63,3 +63,24 @@
 		- This is a narrowing conversion as `Single` and `Double` have lesser bit values compared to decimal.
 		- Some decimal numbers may be lost as a result of the conversion.
 	- Conversions that fail to express to a valid resulting value either as a decimal or other type will return an exception, one of which is `OverflowException`.
+
+## Double
+
+- 64-bit number that also includes positive or negative zero, `PositiveInfinity`, `NegativeInfinity`, and `NaN`.
+- Used for extremely large or small values that are imprecise like distance between planets or atoms.
+
+### Representation and precision
+
+- Provides an imprecise representation of a value as it uses binary fraction to represent its floating values.
+	- This means that when you operate on a floating value multiple times, it becomes less and less precise.
+	- This is demonstrated by using the `R` numeric string format to display all 17 digits of precision supported by the double type.
+- The imprecise nature of this double type can cause issues when comparing exact double value to a double value derived from calculating some numbers together.
+
+- Another limitation of the double type is when an original value of double type is converted to another type and is converted again back to double, which is described as "*value round-trip*", did not preserve the original value as the conversion has lost precision (less significant digits) during the process.
+	- Use the `G17` numeric string format to preserve the value of a double type variable during a round trip.
+	- One major example of this scenario is when a round trip is made between the double type and the single type.
+		- One way to resolve this issue is to round off the values after the conversion so that both the single and double values will have the same precision.
+
+- The loss of precision for the double type is also affected by the platform where the code is ran.
+	- Result of calculations may be different in 32-bit and 64-bit versions of .NET.
+
