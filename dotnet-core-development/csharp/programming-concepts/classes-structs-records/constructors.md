@@ -34,6 +34,22 @@ This means that it will call another constructor in Class1 that can match the pa
     - This is applicable for `class` and `struct` types.
     - For `record` types, the compiler instead creates a public property to hold the value of the primary constructor parameter.
 
+- A class with a primary constructor can have a parameterless constructor by declaring a new constructor block with no parameters but calling the original constructor implementation using the `this` keyword followed by the default parameter values that will be passed into the primary constructor.
+
+```csharp
+public struct Distance(double dx, double dy)
+{
+    //....
+
+    public Distance() : this(0,0) { }
+}
+```
+
+- The parameters for a primary constructor can be used to host the injected services from the dependency injection container.
+- Primary constructor parameters can be assigned with a default value much like how a default values in a method parameter is defined.
+- **NOTE:** Make sure that you're using the class property where the constructor parameter is assigned.
+	- Chances are the class property will have an updated value and the constructor parameter will have the same value all throughout.
+
 ### Static constructors
 
 - Parameterless
