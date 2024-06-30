@@ -9,7 +9,13 @@
 
 ## Databases
 ---
+
 [[database/sql-server|🐙 SQL Server]]
+
+## ORM
+---
+
+[[dotnet-core-development/orm/ef-core|🍜 Entity Framework Core]]
 
 ## Essential Libraries
 ---

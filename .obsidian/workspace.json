@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "710a8e5b5ca53fac",
+        "id": "48543615e3644c42",
         "type": "tabs",
         "children": [
           {
-            "id": "59f62fc75946377b",
+            "id": "8b6c727c7ce3fa8c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "dotnet-core-development/orm/ef-core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "dotnet-core-development/orm/ef-core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "dotnet-core-development/orm/ef-core.md"
+              }
             }
           }
         ]
@@ -138,8 +142,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59f62fc75946377b",
+  "active": "8b6c727c7ce3fa8c",
   "lastOpenFiles": [
+    "dotnet-core-development/dotnet-core-development-index.md",
+    "dotnet-core-development/orm/ef-core.md",
+    "dotnet-core-development/orm",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
     "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
@@ -150,7 +157,6 @@
     "azure/commands.md",
     "azure/204/event-grid.md",
     "azure/204/cdn.md",
-    "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/dotnet/concepts/miscellaneous.md",
     "dotnet-core-development/csharp/misc/miscellaneous.md",
     "dotnet-core-development/csharp/csharp.md",
@@ -174,7 +180,6 @@
     "dotnet-core-development/csharp/misc/async-programming",
     "dotnet-core-development/csharp/misc/linq",
     "dotnet-core-development/csharp/misc",
-    "dotnet-core-development/csharp/advanced",
     "Untitled.canvas"
   ]
 }
