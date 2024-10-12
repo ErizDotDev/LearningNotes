@@ -15,6 +15,17 @@
 - SDK and other tools
 - Application stacks like [ASP.NET](http://ASP.NET) Core, Windows forms, and WPF.
 
+### Benefits
+
+- Supports multiple languages - C#, Visual Basic, F#
+- Shared runtime engine between all .NET languages
+- Cross-language inheritance, exception handling and code debugging
+- Powerful base library that contains all predefined types
+- Simplified deployment model and setup
+	- Multiple versions of .NET can co-exist in a single machine.
+- Extensive command line support.
+
+
 ---
 
 ## Implementations

@@ -3,6 +3,9 @@
 - Aside from being known as an object oriented language, C# can also be considered as a **component-oriented language**.
     - Component oriented language is a software paradigm that focuses on the development of software through reusable bits and pieces called components that can also be self-contained.
 - C# emphasizes versioning as it aims for programs and libraries written in C# to continuously evolve in a compatible manner.
+- Took inspiration from Visual Basic and C++
+	- Visual Basic - optional parameters and class properties (compared to getter and setter methods in Java)
+	- C++ - structures, enumerations, delegates
 
 ### C# Features
 
