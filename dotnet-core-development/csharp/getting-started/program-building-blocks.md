@@ -58,7 +58,8 @@ public T this[int index]
     get => _items[index];
     set
     {
-        if (!object.Equals(_items[index], value)) {
+        if (!object.Equals(_items[index], value)) 
+        {
             _items[index] = value;
             OnChanged();
         }
@@ -75,16 +76,25 @@ public T this[int index]
 
 ### Private setters
 
-- [[properties|Properties]] that act as readonly properties.
+- [[properties|Properties]] that act as read-only properties.
 - Properties that have private setters can only be initialized in a constructor or on set methods
 
 ### Accessibility
 
 - _public_ - most permissive access level; no access restrictions
-- _protected_ - accessible within the class and by derived class instances; not accessible by direct instances
-- _internal_ - accessible only within files in the same assembly.
-- _protected internal_ - accessible from the current assembly or from types that are derived from the containing class
+- _protected_
+	- accessible within the class and by derived class instances; not accessible by direct instances
+	- an alternative for using `private` - but ensuring that the sub-classes can also use the element with the `protected` modifier.
+- _internal_
+	- accessible only within files in the same assembly (or in this case project).
+	- useful for testing - `[InternalsVisibleTo]` attribute and setting allows for the testing of internal methods.
+- _protected internal_
+	- accessible from the current assembly or from types that are derived from the containing class located in a different assembly.
+	- basically it just combines the characteristics of a `protected` and `internal` access modifier.
 - _private_ - inaccessible by other classes; access is limited to the class/struct that contains it.
-- _private protected_ - accessible by derived class instances only within the containing assembly
+- _private protected_
+	- accessible by derived class instances only within the containing assembly
+	- useful for keeping implementation details on subclasses within the same assembly.
+		- if there is another subclass on a different assembly, they can't access the element with the `private protected` access modifier.
 
 - NOTE: All accessibility keywords can be applied on class/struct members. However, _protected internal_ and _private protected_ are the only accessibility keywords that cannot be applied on a class definition.
