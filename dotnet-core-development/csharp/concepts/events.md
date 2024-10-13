@@ -25,7 +25,7 @@
     - When unsubscribing and a lambda expression was used to unsubscribe from an event, the event will not recognize something that has been registered under it, in this case a lambda expression.
 
 - Derived classes CANNOT directly invoke events declared within the base class.
-- DO NOT declare virtual events in base class and override them on derived classes.
+- DO NOT declare virtual events in base class and override them on derived classes. ^f3721d
 - An interface CAN declare an event.
     - Explicit interface implementation requires the event declared MUST have the add and remove accessors.
 

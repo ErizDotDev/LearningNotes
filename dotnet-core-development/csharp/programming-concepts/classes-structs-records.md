@@ -142,6 +142,6 @@ ContainingType.Nested nested = new ContainingType.Nested();
 - Can only be a void method.
 - Does not have access modifier.
 - Does not have `out` parameters.
-- Does not contain the following modifiers: `virtual` `override` `sealed` `new` `extern`
+- Does not contain the following modifiers: `virtual` `override` `sealed` `new` `extern` ^4b0e49
 - Can contain the following modifiers: `static` `unsafe`
 - Can be generic

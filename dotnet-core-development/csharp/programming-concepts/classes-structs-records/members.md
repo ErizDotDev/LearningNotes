@@ -19,7 +19,7 @@
 - Abstract classes can also contain abstract methods.
     - This completes the analogy of an abstract class and interface
 
-- Given the scenario where an abstract class E inherits from a normal class D, and class D has a virtual method called `DoWork()`.
+- Given the scenario where an abstract class E inherits from a normal class D, and class D has a virtual method called `DoWork()`. ^4f17bc
     - Class E can override the `DoWork()`
     - Class E can also place an `abstract` keyword to the `DoWork()` method.
         - What this will do can be exhibited when a new class, class F, implements class E.

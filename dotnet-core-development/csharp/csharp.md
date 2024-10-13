@@ -1,5 +1,25 @@
 # 🚪 C# 
 
+## Classes
+
+## Access Modifiers
+
+[[program-building-blocks#Accessibility|✏️ Description]]
+[[members#Access Modifiers|✏️ Additional Notes]]
+
+## `virtual` keyword
+
+- If a property or a method is applied with this keyword, it means that a sub-class can override the implementation of said property or method.
+- You cannot apply this keyword to a partial method. ([[classes-structs-records#^4b0e49|Info]])
+- Some rules to follow when updating virtual methods or properties in a versioned application or library ([[csharp-concepts#**Versioning**|Info]])
+- Events cannot be declared as virtual. ([[dotnet-core-development/csharp/concepts/events#^f3721d|Info]])
+- A derived class can use `sealed` keyword to disregard a virtual property or method. ([[members#Abstract and sealed classes and class members|More info]])
+- A cool trick using virtual methods ([[members#^4f17bc|Info]])
+- Here are some ways on how virtual methods or properties can be utilized in polymorphism. ([[polymorphism|Info]])
+
+
+This section highlights how the old notes are compiled. These notes are compiled based on the order that they were studied. Author has read the Microsoft official documentation for C# in below order.
+
 ## Getting Started
 ---
 
