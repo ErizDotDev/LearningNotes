@@ -33,6 +33,8 @@
     - CLI is the basis for creating different environment that makes libraries and languages work seamlessly together.
 
 - A source code written in C# is compiled to **IL (Intermediate Language)** which is CLI compliant.
+	- IL allows .NET to have the ability to integrate different languages under the same runtime.
+		- In a scenario where a simple add method is written in C#, F# and VB, each compiled .NET language produces almost exactly the same IL code.
     - IL code and other resources are stored in an assembly file (or .dll files).
     - Assembly contains a manifest that provides information about the assembly’s types, version, etc.
 
@@ -41,6 +43,7 @@
 - **CLR** ^1826a9
 	- Common Language Runtime
     - Translates a compiled C# code (in IL format) into machine readable code (”unmanaged code”) via just in time (JIT) compilation.
+    - JIT is optimized to run in low memory environments while still being capable of utilizing every resources in high memory environments.
     - Any environment that has the CLR in it will be able to read a compiled C# code.
     - In .NET 7, C# can be compiled directly to machine code without the intervention of CLR.
         - This is useful for running .NET applications in containers as this is faster compared to JIT compiled code.

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7dc3a0b413585cb7",
+        "id": "8d3d531ca07d8e45",
         "type": "tabs",
         "children": [
           {
-            "id": "25b9899b9ab0d3f1",
+            "id": "857f122c3cd1afb5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,17 +138,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25b9899b9ab0d3f1",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
     "dotnet-core-development/dotnet/dotnet.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet-core-development-index.md",
     "dotnet-core-development/csharp/csharp.md",
-    "roadmaps.md",
-    "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/csharp/getting-started/introduction.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/dotnet/concepts/assemblies.md",
+    "azure/fundamentals/identity-access-security.md",
     "dotnet-core-development/dotnet/concepts/overview.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
+    "roadmaps.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
     "azure/fundamentals/storage-services.md",
     "dotnet-core-development/csharp/getting-started/program-building-blocks.md",
@@ -165,7 +166,6 @@
     "dotnet-core-development/orm/ef-core.md",
     "dotnet-core-development/orm",
     "azure/204/message-queues.md",
-    "azure/fundamentals/identity-access-security.md",
     "azure/204/blob-storage.md",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
