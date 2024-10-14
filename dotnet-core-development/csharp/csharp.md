@@ -17,6 +17,21 @@
 - A cool trick using virtual methods ([[members#^4f17bc|Info]])
 - Here are some ways on how virtual methods or properties can be utilized in polymorphism. ([[polymorphism|Info]])
 
+## Generics
+
+[[dotnet-core-development/csharp/concepts/generics|⭐ Generics]]
+[[generic-types|✏️ Generic Types]]
+
+## Delegates/events
+
+[[delegates|⭐ Delegates]]
+[[dotnet-core-development/dotnet/fundamental-components/events|⭐ Events]]
+	[[dotnet-core-development/csharp/concepts/events|✏️ More information about events]]
+[[dotnet-core-development/csharp/concepts/distinguish-events-delegates|⭐ Distinguishing delegates and events]]
+
+
+---
+
 
 This section highlights how the old notes are compiled. These notes are compiled based on the order that they were studied. Author has read the Microsoft official documentation for C# in below order.
 

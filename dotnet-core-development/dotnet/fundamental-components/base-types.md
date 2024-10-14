@@ -5,12 +5,13 @@
 
 - Applications written in languages that target .NET implementations like C#, F# and Visual Basic can access types and libraries developed for .NET without caring what language that type or library is written in.
 - To utilize this feature, code must be written such that it is compliant to the CLS (_Common Language Specification_)
-- To validate that the code written is CLS compliant, add the `CLSCompliantAttribute` to your source code.
+- To validate that the code written is CLS compliant, add the `CLSCompliantAttribute` or `[CLSCompliant]` to your source code.
 
 - Writing CLS compliant code means that only certain types and language features are allowed to be used.
     - For example, when defining an Age property, the type `UInt16` can’t be used because it is not CLS compliant - other languages that are CLS compliant may not have a type that corresponds to the `UInt16` type. Instead, use the `Int16` type.
 
 - Some compilers already enforces CLS compliance rules when compiling source code, particularly in C#.
+- You only need to write CLS compliant code if you're working on build tools or compilers.
 
 ### **Simple CLS compliant code rules**
 
@@ -84,7 +85,7 @@
     - “Widening” conversion ^6a8a39
     - No loss of data but can have loss of precision
 
-- **Explicit conversion** - “Narrowing” conversion
+- **Explicit conversion**
     - “Narrowing” conversion
     - Potential loss of data.
 

@@ -5,7 +5,7 @@
 
 [[csharp|🚪 C#]]
 [[dotnet-core-development/dotnet/dotnet|🏔 .NET]]
-.NET CLI
+[[dotnet-core-development/dotnet-cli/dotnet-cli-index|🐢 .NET CLI]]
 
 ## Databases
 ---
