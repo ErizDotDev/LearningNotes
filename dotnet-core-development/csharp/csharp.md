@@ -29,6 +29,10 @@
 	[[dotnet-core-development/csharp/concepts/events|✏️ More information about events]]
 [[dotnet-core-development/csharp/concepts/distinguish-events-delegates|⭐ Distinguishing delegates and events]]
 
+## `out` keyword
+
+- Added to a method parameter type which indicates that a value will be assigned to that parameter after the method finished executing and goes back to its caller.
+- Inside the method, the parameter with the out keyword needs to be initialized with a value. Else, the code will complain.
 
 ---
 

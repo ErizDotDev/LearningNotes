@@ -8,11 +8,21 @@
 - It is recommended to return an integer value for console applications, as it lets other programs know the status of the application after it was executed.
 - The main class can be enclosed or contained in another class so long as it can be discovered by the compiler.
 
+- A Main method without a return type implicitly returns a value of 0.
+	- C# programs are consistent with C based programs where a program needs to return an integer value to indicate that a program ran successfully, with value of 0.
+
 ### Top-level statements
 
 - Classes and namespaces can be declared in a top level statement but they should come **AFTER** the top-level statements.
 - `args` can be called as well from top-level statements, as they are not explicitly defined.
 - Treat a top-level statement as writing statements that goes inside the Main method. With the exception of the first bullet point, write top level statements as normally as possible. You can also do a return of an integer value if you are returning execution status codes.
+
+- Some rules:
+	- Only one file can contain top level statements.
+	- When using top level statements, program should not declare an entry point (aka Main method)
+	- Top level statements can still access array of string arguments.
+	- Top level statements can still return an integer value.
+	- Methods declared in top level statements are considered as local methods to the Main method.
 
 ---
 

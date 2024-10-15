@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5a5e46652839eb80",
+        "id": "e4e069a894f1a41a",
         "type": "tabs",
         "children": [
           {
-            "id": "b3d98cb96c98a52c",
+            "id": "cfb9244ff579affd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -61,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,16 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31d855386c18efba",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
-    "azure/commands.md",
+    "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "dotnet-core-development/dotnet-cli/dotnet-cli-index.md",
-    "azure/azure-index.md",
+    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/dotnet-core-development-index.md",
+    "azure/commands.md",
+    "azure/azure-index.md",
     "dotnet-core-development/dotnet-cli",
     "roadmaps.md",
     "dotnet-core-development/csharp/concepts/generics.md",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/dotnet/fundamental-components/events.md",
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
@@ -167,7 +167,6 @@
     "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "azure/fundamentals/storage-services.md",
     "dotnet-core-development/csharp/getting-started/major-language-areas.md",
-    "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",
     "dotnet-core-development/dotnet/concepts/assemblies",
