@@ -34,6 +34,16 @@
 - Added to a method parameter type which indicates that a value will be assigned to that parameter after the method finished executing and goes back to its caller.
 - Inside the method, the parameter with the out keyword needs to be initialized with a value. Else, the code will complain.
 
+## Reference and value types
+
+- [[dotnet-core-development/csharp/getting-started/introduction#**Value Types vs. Reference Types**|✏️ Notes from Introduction]]
+- [[types-members#**Reference Types**|✏️ Notes from Types and members]]
+
+## Operators
+
+[[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]
+
+
 ---
 
 
