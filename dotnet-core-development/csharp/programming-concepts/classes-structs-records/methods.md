@@ -8,7 +8,7 @@
 
 - `ref` keyword is added to the method definition to use this feature.
 - The `ref` keyword was also added after the `return` keyword.
-- Methods returning by reference cannot have the return type `void`
+- Methods returning by reference should not have the return type `void`
 - This approach is commonly used for performance optimizations, and enabling the use of mutable types in code.
 - This approach, also, must be used with extreme caution as it can cause issues relating to side effects of mutability, and concurrency issues (race conditions).
     - In short, you must know what you’re doing if you want to utilize this approach.
@@ -24,6 +24,12 @@
 - Starting in C# 9.0, [[reflection-attributes#**Attributes**|attributes]] can also be applied to local methods and its method parameters.
 - Local methods can act as iterators.
 - Code samples demonstrating local methods is available in the `local-functions` branch of the `CSharp-Lab` solution.
+- The benefits of using a local method is it can encapsulate pieces of functionality into a unit where it is exposed only to the method where it is used.
+	- Can be a bit of a waste to define a method in a class where it is only used by another method.
+- 
+- **Static local functions**
+	- Use the `static` keyword if you don't want the local function to access variables on the parent method.
+	- Use this approach to prevent side effects on your methods.
 
 ### Exceptions
 
@@ -107,6 +113,20 @@
     - If two candidates satisfy the above criteria, preference goes to the method with the least optional arguments.
         - Overload resolution prefers candidates that have fewer parameters.
 
-**Closure** ^f9967f
+- You cannot use method overload when you have a couple methods that have the exact same signature that only differed with the modifier added to the method argument.
+  
+``` csharp
+static int Add(ref int x) {}
+static int Add(out int x) {}
+```
+
+- It is allowed to have one method use any of the method argument modifiers, and one method without the modifiers.
+
+```csharp
+static int Add(ref int x) {}
+static int Add(int x) {}
+```
+
+### **Closure** ^f9967f
 
 - A C# concept that states that a local function may continue to use variables and parameters from its outer function even if the outer function finishes its execution (by finishing the last line of code in that function, or returning a value)

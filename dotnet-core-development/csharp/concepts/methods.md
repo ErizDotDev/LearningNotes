@@ -53,6 +53,7 @@
     - Passing a comma separated list of individual arguments following the same type
     - Passing null
     - Passing no arguments
+- Language recommendation is for a method to only support a single params parameter and place it as the last parameter accepted by the method.
 
 ### **Optional parameters and arguments**
 
@@ -63,3 +64,12 @@
         - each of the parameters correspond, by name or position, to a single argument in the calling statement, and that argument can be converted to the type of the parameter
     - If more than one candidate is found, it will follow the overload where all arguments are explicitly specified.
     - If there are still multiple candidates under the last filter, the overload will resolve to the candidate that has no optional arguments.
+
+### **`in` modifier**
+
+- Parameter type similar with `out` and `ref`
+- Passes a value by reference to the method but prevents the method from modifying the values.
+- Using the `in` modifier:
+	- Indicates a design choice where a reference type passed into the method cannot be modified.
+	- Can prove performance by reducing pressure in memory
+		- Large value types like structs when copied internally in memory can pose significant performance issues.

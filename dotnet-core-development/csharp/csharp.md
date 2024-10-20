@@ -32,7 +32,7 @@
 ## `out` keyword
 
 - Added to a method parameter type which indicates that a value will be assigned to that parameter after the method finished executing and goes back to its caller.
-- Inside the method, the parameter with the out keyword needs to be initialized with a value. Else, the code will complain.
+- Inside the method, the parameter with the out keyword needs to be initialized with a value. Else, the compiler will throw an error.
 
 ## Reference and value types
 
@@ -41,9 +41,13 @@
 
 ## Operators
 
-[[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]
-
+- *Logical operators*
+	- [[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]\
 - *Relational and equality operators* (`>=`, `==`, `!=`, etc.)
+
+## Assemblies
+
+[[assemblies|⭐ Assemblies]]
 
 
 ---
