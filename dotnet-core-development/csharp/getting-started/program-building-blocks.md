@@ -1,4 +1,4 @@
-# ⭐ Program Building Blocks
+[# ⭐ Program Building Blocks
 
 ### Static vs. Instance [[methods|methods]]
 

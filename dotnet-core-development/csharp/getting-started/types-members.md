@@ -70,3 +70,16 @@ public enum Seasons
 **Reference**
 
 [https://dev.to/tyrrrz/interview-question-heap-vs-stack-c-5aae](https://dev.to/tyrrrz/interview-question-heap-vs-stack-c-5aae)
+
+### **Intrinsic data types and `new` operator**
+
+- All basic C# data types, also known as intrinsic data types, support default constructors.
+- This means these data types can be instantiated with the `new` operator and assign default values.
+	- For integers and floating point values, default is `0` or `0.0`.
+	- For booleans, it is `false`.
+	- For character types, it is a single empty character.
+	- For datetimes, it's `1/1/0001 12:00:00 AM`
+	- For reference types (including string), it's `null`.
+	- Sample usage of `new` operator:
+		- `int sampleNumber = new();`
+		- This is a shortened version of `int sampleNumber = new int();`

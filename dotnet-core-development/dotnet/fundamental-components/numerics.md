@@ -40,9 +40,24 @@
 
 ### Formatting
 
-- Use the **D** format (usually followed with a positive integer value) in the `ToString` method to format the value with leading zeroes.
-	- The number of leading zeroes depend on the integer value specified along with the D specifier.
-- Use the **X** format to specify a byte as a hexadecimal string.
+- Syntax: `Console.WriteLine($"The total amount is {amount:[format_character]}}");`
+- Format characters are used to indicate how a specific numeric value is going to be formatted.
+	- You can use either the upper or lower case of the format characters listed below.
+- Available format characters:
+	- Use **D** to format a numeric value with leading zeroes.
+		- The number of leading zeroes depend on the integer value specified along with the D specifier.
+			- Example: `Console.WriteLine($"The total amount is {amount:d9}}");`
+			- If amount value is 99999, then the resulting string is 000099999.
+	- Use **X** format character to specify a byte as a hexadecimal string.
+		- Using **X** will capitalize non-numeric hexadecimal characters while **x** uses lower case non-numeric hexadecimal characters.
+	- Use **C** to format currency.
+		- The currency will depend on the culture setup locally in your machine.
+	- Use **F** to format decimal numbers.
+		- The provided integer beside the format character is the number of decimal places that will be formatted with the given value.
+		- It will add leading zeroes if necessary to complete the numeric places given.
+	- Use **E** to denote exponential notation.
+	- Use **N** to denote common numeric formatting with commas.
+
 - Use the `ToString` method overload that accepts two method parameters with the final parameter being the value that tells whether a byte shall be converted to decimal, binary, octal or hexadecimal.
 
 ## Decimals
