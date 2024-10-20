@@ -43,6 +43,8 @@
 
 [[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]
 
+- *Relational and equality operators* (`>=`, `==`, `!=`, etc.)
+
 
 ---
 

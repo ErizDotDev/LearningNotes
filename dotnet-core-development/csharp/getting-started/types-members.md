@@ -83,3 +83,8 @@ public enum Seasons
 	- Sample usage of `new` operator:
 		- `int sampleNumber = new();`
 		- This is a shortened version of `int sampleNumber = new int();`
+
+### **Implicit typed local variables**
+
+- Characterized by the use of the keyword `var` instead of the actual type, as it infers the type based on the assigned value.
+- The use of implicit types local variables is allowed in methods as long as the variable used for the return variable is of the same type as the return type declared in the method signature.
