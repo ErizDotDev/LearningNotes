@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5903e25e4762f327",
+        "id": "9ebb8fd499305c36",
         "type": "tabs",
         "children": [
           {
-            "id": "2d9ce912adaef0c2",
+            "id": "86275e0935d03eda",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -35,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +48,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pattern matching",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -88,7 +96,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -99,7 +109,9 @@
               "state": {
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -110,7 +122,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -140,9 +156,11 @@
   },
   "active": "546505948e47eaa3",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/fundamentals/functional-techniques.md",
+    "dotnet-core-development/dotnet/dotnet.md",
+    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
     "dotnet-core-development/csharp/concepts/methods.md",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/concepts/nullable-types.md",
@@ -164,8 +182,6 @@
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/dotnet/fundamental-components/enums.md",
     "dotnet-core-development/csharp/programming-concepts/statements-expressions-equality.md",
-    "database/sql-server.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",

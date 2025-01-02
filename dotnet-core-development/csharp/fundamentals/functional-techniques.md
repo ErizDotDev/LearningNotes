@@ -16,6 +16,17 @@
     - If this was not followed, unreachable code warning and error will pop out . Essentially, other cases will never be reached by the code because the default case will always be detected first.
     - The default case, denoted by a discard operator, also includes null values if not explicitly specified as a specific case on a switch statement.
 
+### Pattern types
+
+- **Type patterns** - *See Type tests section.*
+- **Parenthesized patterns** - Follows the rules of parenthesizing in logical and conditional operations.
+- **Conjunctive patterns** - Characterized by the use of the AND operator.
+- **Disjunctive patterns** - Characterized by the use of the OR operator.
+- **Negated patterns**
+- **Relational patterns** 
+	- Another term for the conditional operations.
+	- If/else statement follows similar as that of the switch statement found under the *Relational patterns* section.
+
 ### Null checks
 
 ```csharp
@@ -117,7 +128,7 @@ foreach (string[] transaction in ReadRecords())
 		_ => throw new InvalidOperationException()
 	};
 
-		Console.WriteLine($"Record: {string.Join(", ", transaction)}, New balance: {balance:C}");
+	Console.WriteLine($"Record: {string.Join(", ", transaction)}, New balance: {balance:C}");
 }
 ```
 
