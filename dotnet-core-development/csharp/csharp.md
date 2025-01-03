@@ -51,6 +51,13 @@
 
 [[assemblies|⭐ Assemblies]]
 
+## Parameter types
+
+- [[csharp#`out` keyword|✏️ `out` keyword]]
+- [[types-members#**Using the ref keyword**|✏️ `ref` keyword]]
+- [[dotnet-core-development/csharp/concepts/methods#**`in` modifier**|✏️ `in` modifier]]
+- [[dotnet-core-development/csharp/concepts/methods#**Parameter Arrays**|✏️ `params` modifier]]
+
 
 ---
 
