@@ -33,6 +33,8 @@
 
 - Added to a method parameter type which indicates that a value will be assigned to that parameter after the method finished executing and goes back to its caller.
 - Inside the method, the parameter with the out keyword needs to be initialized with a value. Else, the compiler will throw an error.
+- Previously, the variable that is used by the out keyword must be defined outside the method call.
+	- Starting in C# 8, a variable can now be defined in conjunction with the use of the out keyword.
 
 ## Reference and value types
 
@@ -42,7 +44,7 @@
 ## Operators
 
 - *Logical operators*
-	- [[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]\
+	- [[coding-style#`&&` and ` ` operators|✏️ Notes on the `&&` and `||` operators]]
 - *Relational and equality operators* (`>=`, `==`, `!=`, etc.)
 
 ## Assemblies
