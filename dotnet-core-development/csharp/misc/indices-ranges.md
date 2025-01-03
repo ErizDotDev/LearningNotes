@@ -6,7 +6,7 @@
 Given the array sequence,
 
 - The 0 index as the same as `sequence[0]`
-- **End operator** - (^) reads as `sequence[sequence.Length]`
+- **End operator** or the ***index operator*** - (^) reads as `sequence[sequence.Length]`
     - Usage: `sequence[^5]`
 - **Range operator** - (..) reads as `sequence.Length - n`, where n is any number.
 
@@ -18,6 +18,7 @@ Given the array sequence,
 `array[..4]` Get elements of an array until the third element. (end value is excluded from the result)
 
 - Range and index operations can be saved on a variable of type `Range` and `Index` respectively.
+- ^0 is not allowed as an index value but can be the ending value for a range.
 
 ### Span
 
