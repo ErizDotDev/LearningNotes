@@ -73,3 +73,16 @@
 	- Indicates a design choice where a reference type passed into the method cannot be modified.
 	- Can prove performance by reducing pressure in memory
 		- Large value types like structs when copied internally in memory can pose significant performance issues.
+
+### **Checking parameters for null values**
+
+- It is good practice to validate heavily used nullable method parameters (eg. string)  if they are null or not.
+- In this instance throw a `ArgumentNullException`.
+- You may also try this new way:
+  
+```csharp
+static void EnterLogData(string message, string owner = "Programmer")
+{
+	ArgumentNullException.ThrowIfNull(message);
+}
+```
