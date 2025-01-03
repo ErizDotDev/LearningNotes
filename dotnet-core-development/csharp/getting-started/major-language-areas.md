@@ -10,6 +10,7 @@
 
 - Once an array is initialized with the new keyword, its values will be initialized with a default value of 0 for numeric types and null for reference types.
 - To get the total number of elements in a multi-dimensional array, you multiple the length of each array dimensions.
+- You cannot initialize arrays with a mismatch between the defined upper bound number and the total amount of elements defined.
 
 ### String Interpolation
 
