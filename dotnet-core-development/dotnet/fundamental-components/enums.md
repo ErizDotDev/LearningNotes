@@ -1,6 +1,9 @@
 # 🚨 Enumerations
 ---
 
+- We change the underlying type of an enum in scenarios where a .NET application will be deployed in a low memory device.
+	- By default, enums are of type int.
+	- Make sure that the enum values fit the available values of the underlying type.
 - Under the hood, enums provide explicit implementations of the `IConvertible` interface for converting from enumeration value to integral type.
 
 ## Best practices
