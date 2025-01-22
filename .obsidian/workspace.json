@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b71a158c103ce673",
+        "id": "ba4d862f4c2607fd",
         "type": "tabs",
         "children": [
           {
-            "id": "4927e66da698899e",
+            "id": "5c027bd871c804ee",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "state": {}
             }
           }
         ]
@@ -133,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
-              "icon": "lucide-list",
-              "title": "Outline"
+              "state": {}
             }
           }
         ]
@@ -155,9 +151,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31d855386c18efba",
+  "active": "5c027bd871c804ee",
   "lastOpenFiles": [
-    "dotnet-core-development/dotnet/fundamental-components/enums.md",
+    "azure/204/message-queues.md",
+    "azure/fundamentals/identity-access-security.md",
+    "azure/204/blob-storage.md",
+    "azure/azure-index.md",
+    "azure/commands.md",
+    "azure/204/event-grid.md",
+    "azure/204/cdn.md",
+    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/csharp/concepts/methods.md",
     "dotnet-core-development/csharp/csharp.md",
