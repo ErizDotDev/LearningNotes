@@ -31,6 +31,8 @@ public enum Seasons
 
 - Immediately accesses the value of the variable that was passed into the method.
 - Returning a reference value that was passed into the method is unnecessary, because the changes to the reference value will also affect the value in the caller method.
+	- The object that was passed into the method is just a copy of the reference to the original object.
+	- If there is a need to change the reference, pass the object as a reference and assign a new instance of that object.
 - Always allocated in the heap, and can be accessed anywhere.
 - Null value is assigned to a reference type variable upon declaration
 - Static objects are classified as reference types.

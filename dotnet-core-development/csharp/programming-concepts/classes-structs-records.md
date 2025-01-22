@@ -24,6 +24,9 @@
 - They cannot directly inherit from another type
 - Are `sealed` by nature, meaning they cannot get inherited.
 - Does not require constructors.
+- If a struct contains a reference type, a string for example, the reference type characteristics won't be affected and the change will still register.
+	- Similar to a shallow copy.
+	- To do a deep copy where updating the reference type won't affect its other instances, one approach is to use the `ICloneable` interface.
 
 ## Finalizers
 

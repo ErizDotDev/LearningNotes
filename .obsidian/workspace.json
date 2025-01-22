@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ba4d862f4c2607fd",
+        "id": "ee2471f6b4bd12bf",
         "type": "tabs",
         "children": [
           {
-            "id": "5c027bd871c804ee",
+            "id": "15c792d98276fa02",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -67,8 +69,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -131,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -151,8 +154,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c027bd871c804ee",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/getting-started/types-members.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/csharp/getting-started/introduction.md",
+    "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "azure/204/message-queues.md",
     "azure/fundamentals/identity-access-security.md",
     "azure/204/blob-storage.md",
@@ -163,10 +172,8 @@
     "dotnet-core-development/dotnet/fundamental-components/numerics.md",
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/csharp/concepts/methods.md",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
-    "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "azure/204/app-service.md",
     "dotnet-core-development/csharp/misc/indices-ranges.md",
@@ -175,17 +182,6 @@
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/csharp/fundamentals/fundamentals.md",
     "azure/204/containers.md",
-    "dotnet-core-development/dotnet/fundamental-components/collections-ds.md",
-    "azure/204/blob-storage.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
-    "dotnet-core-development/csharp/fundamentals/functional-techniques.md",
-    "dotnet-core-development/dotnet/concepts/assemblies.md",
-    "dotnet-core-development/csharp/concepts/nullable-types.md",
-    "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
-    "dotnet-core-development/csharp/misc/linq/type-relationships.md",
-    "dotnet-core-development/dotnet/fundamental-components/numerics.md",
-    "azure/204/event-grid.md",
-    "dotnet-core-development/csharp/programming-concepts/strings.md",
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",
