@@ -23,6 +23,9 @@
 - Property implementations in the derived class can ignore the base class’s implementation by using the `new` keyword.
 - Property implementations can also be overridden given that the base class is an abstract class.
 
+- Public and private accessors of properties can be mixed.
+	- You can configure the setter as private if the property is not to be updated outside of the class.
+
 ## Interface Properties
 
 - Like methods, interfaces can declare properties as part of the contract that a class that implements the interface needs to implement.
@@ -68,3 +71,5 @@
         - This step will only work if the set accessor is set to private.
             - Not having the set accessor will cause a compiler error when you assign a value to the property.
                 - This is because the property has no way of setting the value without the set accessor.
+
+- You cannot create a write-only automatic property. (property that does not have a getter)

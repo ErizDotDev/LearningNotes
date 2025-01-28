@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ee2471f6b4bd12bf",
+        "id": "ba7936e095b35f1f",
         "type": "tabs",
         "children": [
           {
-            "id": "15c792d98276fa02",
+            "id": "38d8791ac97a832a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,12 +156,15 @@
   },
   "active": "546505948e47eaa3",
   "lastOpenFiles": [
-    "dotnet-core-development/csharp/getting-started/types-members.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/dotnet/concepts/assemblies.md",
+    "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
+    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
+    "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
-    "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "azure/204/message-queues.md",
     "azure/fundamentals/identity-access-security.md",
     "azure/204/blob-storage.md",
@@ -173,15 +176,12 @@
     "dotnet-core-development/dotnet/dotnet.md",
     "dotnet-core-development/csharp/concepts/methods.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/methods.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
     "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "azure/204/app-service.md",
     "dotnet-core-development/csharp/misc/indices-ranges.md",
     "dotnet-core-development/csharp/concepts/indexer.md",
     "dotnet-core-development/csharp/getting-started/major-language-areas.md",
     "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
-    "dotnet-core-development/csharp/fundamentals/fundamentals.md",
-    "azure/204/containers.md",
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",
