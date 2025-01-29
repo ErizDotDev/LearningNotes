@@ -11,10 +11,14 @@
             "id": "38d8791ac97a832a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dotnet-core-development/csharp/getting-started/types-members.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "types-members"
             }
           }
         ]
@@ -48,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"const\"",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -69,7 +73,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -154,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "546505948e47eaa3",
+  "active": "38d8791ac97a832a",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
@@ -181,7 +187,6 @@
     "dotnet-core-development/csharp/misc/indices-ranges.md",
     "dotnet-core-development/csharp/concepts/indexer.md",
     "dotnet-core-development/csharp/getting-started/major-language-areas.md",
-    "dotnet-core-development/dotnet/fundamental-components/generic-types.md",
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",

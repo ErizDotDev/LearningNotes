@@ -53,7 +53,7 @@ public enum Seasons
 
 **readonly**
 
-- A readonly variable can be assigned later.
+- A readonly variable can be assigned later, specifically in the constructor.
 - Can be used in more complex types.
 - Evaluated at run time.
 
