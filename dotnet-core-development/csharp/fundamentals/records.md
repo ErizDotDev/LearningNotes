@@ -11,6 +11,29 @@
     - Classes follow the reference equality. **Reference equality** check if both data came from the same reference object.
 - If you’re not using Entity Framework Core.
 
+## Inheritance behavior
+
+### Equality
+
+- In cases where records are inherited, two records are deemed as equal if both have the same runtime type.
+	- Does not matter if the records match type on compile time.
+	- Example:
+
+```csharp
+
+public record Motorcycle(string Make, string Model);
+public record Scooter(string Make, string Model, string Color) : Motorcycle(Make, Model);
+
+Motorcycle mc = new Motorcycle("Harley", "Lowrider");
+Motorcycle sc = new Scooter("Harley", "Lowrider");
+
+```
+
+### Deconstruction
+
+- Deconstruction will not include extra properties of a derived type if the type used is the base type.
+	- Casting the object to the derive type will allow the deconstruction operation.
+
 ### Review Notes
 
 - On this given link, [https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records) there is a code block here that looks like this.

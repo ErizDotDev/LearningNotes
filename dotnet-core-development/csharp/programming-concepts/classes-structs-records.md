@@ -102,7 +102,7 @@ class Car
 
 - Class or type defined within another class, struct or interface.
     - _No experience yet with a type defined within an interface_.
-- The nested or the inner type has access to members of the containing or outer type.
+- The nested type or the inner type has access to members of the containing type or outer type.
 - To instantiate a nested type, follow the syntax below:
 
 ```csharp
@@ -117,6 +117,7 @@ public class ContainingType
 ContainingType.Nested nested = new ContainingType.Nested();
 ```
 
+- Oftentimes, nested type only acts as a helper to the outer type.
 ## Partial classes and methods
 
 ---
