@@ -26,6 +26,8 @@
         - When class F overrides the `DoWork()` method in class E, class F ignores class D’s implementation.
         - This pattern allows the forcing of derived classes to provide new implementations for virtual methods.
 
+- An abstract member, more commonly methods, are required to be overridden unlike their virtual counterparts. 
+
 ### Sealed classes and members
 
 - Because it cannot be used as a base class, some run time optimizations can make calling sealed classes faster.

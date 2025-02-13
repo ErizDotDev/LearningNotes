@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "29c3c03906ba9328",
+        "id": "6fae7906c4b233f5",
         "type": "tabs",
         "children": [
           {
-            "id": "66daa8b8140352b7",
+            "id": "e0c4570b1d93780b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "classes-structs-records"
+              "title": "New tab"
             }
           }
         ]
@@ -40,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -52,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nested types",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -73,8 +70,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,14 +155,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "66daa8b8140352b7",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
-    "dotnet-core-development/csharp/fundamentals/records.md",
     "dotnet-core-development/csharp/csharp.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
-    "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/fundamentals/records.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
+    "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
