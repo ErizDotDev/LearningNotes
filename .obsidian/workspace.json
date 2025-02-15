@@ -4,11 +4,19 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "8de253dab8cedd50",
         "type": "tabs",
         "children": [
           {
             "id": "1983def4eb37a5c0",
+=======
+        "id": "6fae7906c4b233f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0c4570b1d93780b",
+>>>>>>> 788bf8ddbcfa43c8bed73fd2b075774e46463a5c
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +44,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -156,11 +165,20 @@
   },
   "active": "546505948e47eaa3",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "dotnet-core-development/csharp/fundamentals/records.md",
     "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
     "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
+=======
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/fundamentals/records.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records/constructors.md",
+    "dotnet-core-development/csharp/getting-started/types-members.md",
+>>>>>>> 788bf8ddbcfa43c8bed73fd2b075774e46463a5c
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
@@ -181,7 +199,10 @@
     "dotnet-core-development/csharp/misc/linq/general-how-tos.md",
     "azure/204/app-service.md",
     "dotnet-core-development/csharp/misc/indices-ranges.md",
+<<<<<<< HEAD
     "dotnet-core-development/csharp/concepts/indexer.md",
+=======
+>>>>>>> 788bf8ddbcfa43c8bed73fd2b075774e46463a5c
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",

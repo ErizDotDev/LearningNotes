@@ -10,6 +10,7 @@
 ## `virtual` keyword
 
 - If a property or a method is applied with this keyword, it means that a sub-class can override the implementation of said property or method.
+	- Derived classes may or may not override a method marked with virtual keyword.
 - You cannot apply this keyword to a partial method. ([[classes-structs-records#^4b0e49|Info]])
 - Some rules to follow when updating virtual methods or properties in a versioned application or library ([[csharp-concepts#**Versioning**|Info]])
 - Events cannot be declared as virtual. ([[dotnet-core-development/csharp/concepts/events#^f3721d|Info]])
