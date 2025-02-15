@@ -1,9 +1,15 @@
 # 🏓 Records
 
 - Records are immutable.
+	- Properties are set with init accessors rather than the setter accessor.
+	- Can also be mutable but records are recommended for immutable data structures.
+		- To define mutable records specify properties inside the record with set accessor.
 - Unlike classes, overriding the `ToString()` method is unnecessary as the language innately provides a behavior for records to display values of a record’s properties.
 - Can inherit from another record but it cannot inherit from a class.
 
+- Has a natural `Deconstruct()` method that breaks down the record properties into individual variables.
+	- Needs the out keyword per variable and the variable must match the position of the property for correct value application.
+- Can also use the Tuple notation for deconstruction.
 ### When to use
 
 - Comparing data based on value equality

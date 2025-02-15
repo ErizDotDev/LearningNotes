@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ba7936e095b35f1f",
+        "id": "8de253dab8cedd50",
         "type": "tabs",
         "children": [
           {
-            "id": "38d8791ac97a832a",
+            "id": "1983def4eb37a5c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dotnet-core-development/csharp/getting-started/types-members.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "types-members"
+              "title": "New tab"
             }
           }
         ]
@@ -52,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"const\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -73,8 +69,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,16 +154,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38d8791ac97a832a",
+  "active": "546505948e47eaa3",
   "lastOpenFiles": [
+    "dotnet-core-development/csharp/fundamentals/records.md",
+    "dotnet-core-development/csharp/csharp.md",
+    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/getting-started/types-members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/members.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/properties.md",
-    "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
     "dotnet-core-development/dotnet/concepts/assemblies.md",
     "dotnet-core-development/csharp/misc/linq/standard-query-operators.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
-    "dotnet-core-development/csharp/getting-started/types-members.md",
-    "dotnet-core-development/csharp/csharp.md",
     "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/csharp/programming-concepts/contravariance-covariance.md",
     "azure/204/message-queues.md",
@@ -186,7 +182,6 @@
     "azure/204/app-service.md",
     "dotnet-core-development/csharp/misc/indices-ranges.md",
     "dotnet-core-development/csharp/concepts/indexer.md",
-    "dotnet-core-development/csharp/getting-started/major-language-areas.md",
     "dotnet-core-development/dotnet-cli",
     "dotnet-core-development/orm",
     "dotnet-core-development/dotnet/fundamental-components",
