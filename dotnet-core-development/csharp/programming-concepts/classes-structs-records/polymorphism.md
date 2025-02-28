@@ -9,6 +9,7 @@
     - If the method in the derived class is preceded by the `new` keyword, the method is defined as independent of the method in the base class.
         - Additionally, using the `new` keyword hides the base class implementation from the derived class.
             - Does this mean that calling the base class method implementation via `base.MethodCall()` will not work?
+		- Even with the `new` keyword applied, you can still call the original base method from the parent class by explicitly casting the object to the parent type.
     - If the method in the derived class is preceded by the `override` keyword, objects in that class will call that method instead of the method on the base class.
     - A base class method must have the `virtual` keyword to denote that the derived class should override said method.
     - The base class method can be called from within the derived class using the `base` keyword.

@@ -5,6 +5,12 @@
 - For C# versions starting at 8.0, default interfaces becomes available where members like methods and properties can have default implementation.
 	- Properties can now also be defined inside that same interface.
 
+- **How to know whether an object implements an interface?**
+	- Cast it to the interface - if the casting fails, an `InvalidCastException` will be generated.
+	- Declaring the object as the interface type with the `as` keyword.
+		- If casting with `as` keyword fails, the resulting object will be `null`.
+		- Test an object in an if statement with the `is` keyword.
+
 ### Why do we need to use default interfaces?
 
 [https://stackoverflow.com/questions/62832992/when-should-we-use-default-interface-method-in-c](https://stackoverflow.com/questions/62832992/when-should-we-use-default-interface-method-in-c)
