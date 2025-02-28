@@ -2,7 +2,8 @@
 
 - Interfaces is used to define a behavior of a class which does not necessarily have a “is a” relationship.
 - For C# versions earlier than 8.0, interfaces are similar with abstract classes without the properties definition. No default implementation for any defined methods was necessary.
-- For C# versions starting at 8.0, default interfaces is available, meaning a default implementation can be defined on methods that are registered in an interface. Properties can also be defined inside that same interface.
+- For C# versions starting at 8.0, default interfaces becomes available where members like methods and properties can have default implementation.
+	- Properties can now also be defined inside that same interface.
 
 ### Why do we need to use default interfaces?
 

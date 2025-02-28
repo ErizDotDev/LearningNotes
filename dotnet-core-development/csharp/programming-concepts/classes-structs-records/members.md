@@ -8,6 +8,7 @@
 
 - `abstract` keyword enables the creation of incomplete classes and class members.
     - The implementation shall be provided by the derived classes.
+    - Must use the `override` keyword to implement abstract members.
 - `sealed` keyword enables the prevention of the inheritance of a class or class members that were previously marked by the `virtual` keyword.
     - Because it prevents inheritance, sealed classes cannot be a base class, or an abstract class.
 
