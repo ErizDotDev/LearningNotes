@@ -74,12 +74,12 @@ public class ISurface
 
 public class Sample : IControl, ISurface
 {
-	public void IControl.Paint()
+	void IControl.Paint()
 	{
 		Console.WriteLine("Paint method in SampleClass using IControl interface.");
 	}
 
-	public void ISurface.Paint()
+	 void ISurface.Paint()
 	{
 		Console.WriteLine("Paint method in SampleClass using ISurface interface.");
 	}
@@ -89,3 +89,10 @@ public class Sample : IControl, ISurface
 - To instantiate a class and use explicit interface:
     - The class will need to be instantiated using its own type and not by the interface.
     - Initialize the interface type by assigning the instantiated class as its value.
+- Explicit interface implementations are `private` by default.
+
+### Interface Hierarchy with Default Implementations
+
+- Default implementations of a parent interface can get inherited by its child interface and classes that inherit the child interface.
+- Child interface cannot override the default implementation of the parent interface unless it uses the `new` keyword.
+- If the class that inherits either the parent or child interface also defines an implementation for the same method, code will run the implementation from the class, not the interfaces.
