@@ -11,10 +11,14 @@
             "id": "93eb47eaf7f29ea2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dotnet-core-development/csharp/fundamentals/interfaces.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "interfaces"
             }
           }
         ]
@@ -163,13 +167,8 @@
   },
   "active": "546505948e47eaa3",
   "lastOpenFiles": [
-    "dotnet-core-development/csharp/csharp.md",
-    "dotnet-core-development/dotnet-core-development-index.md",
-    "dotnet-core-development/dotnet/dotnet.md",
-    "dotnet-core-development/csharp/misc/async-programming.md",
-    "dotnet-core-development/csharp/programming-concepts/strings.md",
-    "dotnet-core-development/csharp/getting-started/introduction.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records.md",
+    "dotnet-core-development/csharp/fundamentals/interfaces.md",
     "dotnet-core-development/dotnet/fundamental-components/base-types.md",
     "dotnet-core-development/csharp/fundamentals/interfaces.md",
     "dotnet-core-development/csharp/programming-concepts/classes-structs-records/polymorphism.md",
